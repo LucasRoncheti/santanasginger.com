@@ -9901,6 +9901,11 @@ textarea.form-control-lg {
   background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important;
 }
 
+.bg-body-verde {
+  --bs-bg-opacity: 1;
+  background-color: #99d7c5;
+}
+
 .bg-body-secondary-hover:hover {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important;
