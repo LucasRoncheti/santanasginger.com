@@ -252,4 +252,53 @@ body {
 
 
 
+/*  
+  -----------------------------------------------------  
+  -----      CSS for the products gallery       -----
+  -----------------------------------------------------
+*/
+
+/* Contêiner da galeria */
+.gallery-item-container {
+    display: flex;
+    flex-direction: column; /* Organiza imagem e legenda verticalmente */
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem; /* Espaço entre a imagem e o texto */
+}
+
+/* Item da galeria (imagem) */
+.gallery-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border-radius: var(--bs-border-radius-lg); /* Seguindo o padrão do site */
+    overflow: hidden;
+}
+
+.gallery-item img {
+    transition: transform 0.3s ease;
+    border-radius: var(--bs-border-radius-lg);
+    display: block;
+    width: 100%;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.2); /* Aumenta a imagem no hover */
+}
+
+/* Legenda da galeria */
+.gallery-caption {
+    opacity: 0;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    color: var(--bs-body-color);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(-10px); /* Inicialmente oculta */
+}
+
+.gallery-item:hover + .gallery-caption {
+    opacity: 1;
+    transform: translateY(0); /* Exibe e posiciona a legenda no hover */
+}
+
 
