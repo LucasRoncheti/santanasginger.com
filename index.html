@@ -57,6 +57,7 @@
     <meta property="og:type" content="website">
     <!-- Defines the content language -->
     <meta property="og:locale" content="en_US">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
 </head>
 
@@ -151,60 +152,39 @@
                     </div>
 
                     <div class="offcanvas-body">
-                        <ul class="navbar-nav align-items-xl-center flex-grow-1 column-gap-4 row-gap-4 row-gap-xl-2">
-                            <li class="nav-item ms-xl-auto">
-                                <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href="./index.html" class="px-3  bg-green-hover nav-link rounded-3 text-base leading-6 fw-semibold" aria-current="page">
-	                                Home
-	                            </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href=" ./services.html " class="px-3 bg-green-hover nav-link rounded-3 text-base leading-6 fw-semibold ">
-	                                Products
-	                            </a>
-                            </li>
-
-                            <li class="nav-item ">
-                                <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href="./about.html " class="px-3 bg-green-hover nav-link rounded-3 text-base leading-6 fw-semibold ">
-                                    About
-                                    </a>
-                            </li>
+                        <ul id="menu-list" class="navbar-nav align-items-xl-center flex-grow-1 column-gap-4 row-gap-4 row-gap-xl-2">
+                            <!--menu-list.js-->
 
                             <!-- <li class="nav-item ">
-					            <div class="dropdown ">
-								    <button class="btn w-100 text-start dropdown-toggle px-3 text-body-emphasis bg-body-secondary-hover nav-link rounded-3 text-base leading-6 fw-semibold " type="button " data-bs-toggle="dropdown " aria-expanded="false ">
+                            <div class="dropdown ">
+                                <button class="btn w-100 text-start dropdown-toggle px-3 text-body-emphasis bg-body-secondary-hover nav-link rounded-3 text-base leading-6 fw-semibold " type="button " data-bs-toggle="dropdown " aria-expanded="false ">
 								        Blog
 								    </button>
-								    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 text-sm shadow bg-body-tertiary " style="--bs-dropdown-min-width: 9rem; ">
-								    	<li class="d-none d-xl-block " style="color: var(--bs-tertiary-bg); ">
-					                        <svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 " fill="currentColor "
-					                            class="mt-n1 d-inline-block position-absolute top-0 end-0 translate-middle " viewBox="0 0 16 16 ">
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 text-sm shadow bg-body-tertiary " style="--bs-dropdown-min-width: 9rem; ">
+                                    <li class="d-none d-xl-block " style="color: var(--bs-tertiary-bg); ">
+                                        <svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 " fill="currentColor " class="mt-n1 d-inline-block position-absolute top-0 end-0 translate-middle " viewBox="0 0 16 16 ">
 					                            <path class="carret-dropdown-path " d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z "/>
 					                        </svg>
-					                    </li>
-								        <li>
-								        	<a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog.html "> 
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog.html "> 
 								        		Blog page 
 								        	</a>
-								        </li>
-								        <li>
-								        	<a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog-post.html "> 
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog-post.html "> 
 								        		Blog post 
 								        	</a>
-								        </li>
-								        <li>
-								        	<a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog-author.html "> 	Author page 
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog-author.html "> 	Author page 
 								        	</a>
-								        </li>
-								    </ul>
-								</div>
-	                        </li> -->
+                                    </li>
+                                </ul>
+                            </div>
+                            </li> -->
 
-                            <li class="nav-item ms-xl-auto ">
-                                <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href="./contact.html " class="px-3  bg-body-secondary-hover border nav-link rounded-3 text-base leading-6 fw-semibold text-center ">
-	                                Contact us
-	                            </a>
-                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -218,7 +198,7 @@
     <div class="overflow-hidden position-relative ">
         <img src="./assets/img/bg/bg02.jpg " class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover " alt="Meeting ">
 
-        <div class="overlay position-absolute z-n1 top-0 h-100 w-100 bg-dark " style="opacity: 0.85; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85); ">
+        <div class="overlay position-absolute z-n1 top-0 h-100 w-100 bg-dark " style="opacity: 0.75; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85); ">
         </div>
 
         <div class="container ">
@@ -399,10 +379,7 @@
                 </div>
             </div>
 
-            <!-- big image -->
-            <div class="ratio ratio-16x9 mt-7 mt-sm-8 mt-xl-9 ">
-                <img src="./assets/img/bg/Logo_Mockups_13_C.jpg " class="object-fit-cover rounded-3 " alt="presentation " loading="lazy ">
-            </div>
+
         </div>
     </div>
 
@@ -422,11 +399,18 @@
                     <div class="m-0 mt-4 text-body-secondary text-lg leading-8 ">
                         Our headquarters are based in Brazil, with additional branches in the USA and Europe. <br><br> Whether you need a full container or just a few pallets, you can conveniently purchase directly through our efficient distribution network.
                     </div>
+                    <div class="mt-4 ">
+                        <a href="./exportacao.html " class="icon-link icon-link-hover text-decoration-none text-sm leading-6 fw-bold ">
+                            Learn more 
+                            <span class="bi align-self-start left-to-right " aria-hidden="true ">→</span>
+                            <span class="bi align-self-start right-to-left " aria-hidden="true ">←</span>
+                        </a>
+                    </div>
                 </div>
 
                 <!-- Coluna de imagem -->
                 <div class="col-md-6 text-center text-md-end ">
-                    <img class="img-fluid " src="assets/img/bg/3x/Mapas.png " alt="Map ">
+                    <img class="img-fluid " src="assets/img/bg/Grupo 16.png" alt="Map ">
                 </div>
             </div>
         </div>
@@ -436,9 +420,9 @@
 
 
     <!-- Certificates -->
-    <div style="background-color: rgb(236, 236, 236); " class="overflow-hidden py-7 py-sm-8 py-xl-9 ">
-        <h2 style="text-align: center; " class="text-center fw-semibold text-body-emphasis text-3xl leading-9 " data-aos-delay="0 " data-aos="fade " data-aos-duration="3000 ">
-            Our Certificates
+    <div style=" " class="overflow-hidden py-7 py-sm-8 py-xl-9 ">
+        <h2 style="text-align: center; " class="text-center fw-semibold text-primary-emphasis text-5xl leading-9 " data-aos-delay="0 " data-aos="fade " data-aos-duration="3000 ">
+            Our Certificates <i class="bi bi-award"></i>
         </h2>
         <div class="container ">
 
@@ -568,6 +552,16 @@
         </div>
     </div>
 
+
+    <div class="overflow-hidden pb-10 ">
+        <div class="container ">
+            <!-- big image -->
+            <div class="ratio  ratio-16x9 mt-7 mt-sm-8 mt-xl-9 ">
+                <img src="./assets/img/bg/Logo_Mockups_13_C.jpg " class="object-fit-cover rounded-3 " alt="presentation " loading="lazy ">
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -805,6 +799,7 @@
     <script src="./assets/libraries/aos/aos.js "></script>
     <script src="./assets/js/scripts.js "></script>
     <script src="./assets/php/contact/script.js "></script>
+    <script src="./assets/js/menu-list.js"></script>
 
 
 

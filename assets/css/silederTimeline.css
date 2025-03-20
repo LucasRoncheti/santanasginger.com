@@ -1,0 +1,96 @@
+.timeline-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    width: 70%;
+    height: 100px;
+    border-bottom: solid 3px #c2410c;
+}
+
+.timeline-item {
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+.timeline-item.active {
+    display: block;
+    opacity: 1;
+}
+
+.timeline-item .icon {
+    width: 65px;
+    height: 65px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+.timeline-item.active .icon {
+    background-color: #c2410c;
+    color: white;
+}
+
+.timeline-item span {
+    display: block;
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.timeline-item.active span {
+    color: #c2410c;
+}
+
+.timeline-content {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #064e3b;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    padding: 0 20%;
+}
+
+.timeline-content.show {
+    opacity: 1;
+}
+
+.nav-btn {
+    font-size: 24px;
+    cursor: pointer;
+    color: #064e3b;
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        border-bottom: none;
+    }
+    .timeline-item {
+        display: none;
+        /* Esconde todos no mobile */
+    }
+    .timeline-item.active {
+        display: flex;
+        /* Apenas o ativo aparece */
+        flex-direction: column;
+        align-items: center;
+    }
+    .timeline-content {
+        padding: 10%;
+    }
+}
