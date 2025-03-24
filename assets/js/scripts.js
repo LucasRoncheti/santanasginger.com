@@ -1,6 +1,5 @@
-
 // Replace   enter_your_form_action_url_here   with your actual Mailchimp URL
-const formActionURL = `enter_your_form_action_url_here`; 
+const formActionURL = `enter_your_form_action_url_here`;
 
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -20,11 +19,11 @@ var textDirectionOfTheDom = document.querySelector('html').getAttribute('dir');
   -------------------------------------------
 */
 
-window.addEventListener("load", function(event){
+window.addEventListener("load", function(event) {
     var loaderWrapper = document.querySelector('.loader-wrapper');
     if (loaderWrapper) {
         loaderWrapper.style.display = "none";
-    } 
+    }
 
     // initialize the AOS
     if (typeof AOS === 'object') {
@@ -71,14 +70,14 @@ function backToTop() {
 
 // When the user scrolls down 800px from the top of the document, show the button
 function scrollbtnBackToTopFun() {
-    if ( document.body.scrollTop > 800 || document.documentElement.scrollTop > 800 ) {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
         btnBackToTop.style.display = "inline-flex";
     } else {
         btnBackToTop.style.display = "none";
     }
 }
 
-window.onscroll = function () {
+window.onscroll = function() {
     if (btnBackToTop) {
         scrollbtnBackToTopFun();
     }
@@ -99,7 +98,7 @@ if (btnBackToTop) {
 
 const navigation = document.querySelector('.navigation');
 if (navigation) {
-    
+
     navigation.style.transition = 'top 2s';
     let lastScrollTop = 0;
 
@@ -138,22 +137,22 @@ if (navigation) {
   ----------------------------------------------------------------------------
 */
 
-(function () {
+(function() {
 
     // Get all forms with the class "mc-embedded-subscribe-form"
     var mcEmbeddedSubscribeForms = document.querySelectorAll('.mc-embedded-subscribe-form');
 
     if (mcEmbeddedSubscribeForms.length > 0) {
 
-        mcEmbeddedSubscribeForms.forEach(function (subscribeForm) {
+        mcEmbeddedSubscribeForms.forEach(function(subscribeForm) {
 
             subscribeForm.setAttribute('action', formActionURL);
 
-            subscribeForm.addEventListener('submit', function (e) {
+            subscribeForm.addEventListener('submit', function(e) {
                 e.preventDefault();
 
                 // Check for spam
-                if(subscribeForm.querySelector('.js-validate-robot').value !== '') { return false }
+                if (subscribeForm.querySelector('.js-validate-robot').value !== '') { return false }
 
                 // Get url for mailchimp
                 var url = this.action.replace('/post?', '/post-json?');
@@ -262,36 +261,26 @@ if (navigation) {
   -----      JS to embed a video on modal!      -----
   ---------------------------------------------------
 */
+document.addEventListener('DOMContentLoaded', function() {
+    const videoButtons = document.querySelectorAll('.video-btn-modal');
 
-var iframeVideo;
-var videoSrc;
-var videoDataBsTarget;
-var videoDataBsTargetModale;
-var videoBtn = document.querySelectorAll('.video-btn-modal');
+    videoButtons.forEach(button => {
+        const videoSrc = button.getAttribute('data-bs-src');
+        const targetId = button.getAttribute('data-bs-target').replace('#', '');
+        const modal = document.getElementById(targetId);
 
-if (videoBtn.length > 0) {
-    videoBtn.forEach(element => {
-        element.addEventListener('click',function(e){
-            videoSrc = element.getAttribute('data-bs-src')
-            videoDataBsTarget = element.getAttribute('data-bs-target')
+        const iframe = modal.querySelector('.iframeVideo');
 
-            iframeVideo = document.querySelector(videoDataBsTarget + " .iframeVideo");
+        // Adiciona apenas uma vez os eventos para o modal
+        modal.addEventListener('show.bs.modal', function() {
+            iframe.setAttribute('src', `${videoSrc}?autoplay=1&modestbranding=1&showinfo=0`);
+        });
 
-            videoDataBsTarget = videoDataBsTarget.slice(1)
-            videoDataBsTargetModale = document.getElementById(videoDataBsTarget)
-
-            videoDataBsTargetModale.addEventListener('shown.bs.modal',(e)=>{
-                iframeVideo.setAttribute('src', videoSrc + '?autoplay=1&amp;modestbranding=1&amp;showinfo=0')
-            })
-
-            videoDataBsTargetModale.addEventListener('hide.bs.modal',(e)=>{
-                iframeVideo.setAttribute('src', videoSrc)
-            })
-
-        })
-    })
-}
-
+        modal.addEventListener('hide.bs.modal', function() {
+            iframe.setAttribute('src', '');
+        });
+    });
+});
 
 
 
@@ -300,7 +289,7 @@ if (videoBtn.length > 0) {
   ----------------------------------
   -----      JS for Glide      -----
   ----------------------------------
-*/ 
+*/
 
 
 
@@ -359,6 +348,3 @@ if (glideElements.length > 0) {
     });
 
 }
-
-
-

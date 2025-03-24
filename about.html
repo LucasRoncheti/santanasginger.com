@@ -48,7 +48,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-
     <!-- Open Graph Meta Tags for Social Sharing -->
     <!-- Update the 'title' and 'description' content below to enhance social sharing -->
     <meta property="og:title" content="Santana's Ginger">
@@ -206,7 +205,7 @@
 
 
     <!-- header body -->
-    <div class="overflow-hidden py-9 py-xl-10 position-relative ">
+    <div id="welcome" class="overflow-hidden py-9 py-xl-10 position-relative ">
         <img src="./assets/img/bg/bg04.jpg" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover" alt="Meeting">
 
         <div class="position-absolute z-n1 top-0 h-100 w-100 bg-dark" style="opacity: 0.35; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85);">
@@ -259,6 +258,60 @@
             </div>
         </div>
     </div>
+
+
+    <div id="ourhistory" class="container  mb-5">
+        <div class="max-w-2xl">
+            <h2 class="m-0 text-primary-emphasis text-4xl  text-base leading-7 fw-semibold">
+                Our History
+            </h2><br>
+            <div class="m-0 mt-3 text-1xl tracking-tight ">
+                Each milestone in our journey represents our commitment to growth, innovation, and excellence, shaping our history from foundation to global expansion.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Timeline   -->
+    <div class="timeline-container">
+
+        <div class="timeline">
+            <div class="nav-btn" id="prev">&#60;</div>
+            <div class="timeline-item active" data-index="0">
+                <div class="icon"><i class="bi bi-house-fill"></i></div>
+                <span>1986</span>
+            </div>
+            <div class="timeline-item" data-index="1">
+                <div class="icon"><i class="bi bi-truck"></i></div>
+                <span>2000</span>
+            </div>
+            <div class="timeline-item" data-index="2">
+                <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+                <span>2015</span>
+            </div>
+            <div class="timeline-item" data-index="3">
+                <div class="icon"><i class="bi bi-globe"></i></div>
+                <span>2016</span>
+            </div>
+            <div class="timeline-item" data-index="4">
+                <div class="icon"><i class="bi bi-tag"></i></div>
+                <span>2019</span>
+            </div>
+            <div class="timeline-item" data-index="5">
+                <div class="icon"><i class="bi bi-buildings"></i></div>
+                <span>2020</span>
+            </div>
+            <div class="timeline-item" data-index="6">
+                <div class="icon"><i class="bi bi-box-seam"></i></div>
+                <span>2023</span>
+            </div>
+            <div class="nav-btn" id="next">&#62;</div>
+        </div>
+        <p class="timeline-content show" id="timeline-text">
+            Foundation of the company 'Casa do Agricultor', an agricultural products business in the Espírito Santo region, founded by Mr. Djalma Santana.
+        </p>
+    </div>
+    <br><br><br>
 
 
     <!-- Our work -->
@@ -326,61 +379,10 @@
         </div>
     </div>
 
-    <div class="container  mb-5">
-        <div class="max-w-2xl">
-            <h2 class="m-0 text-primary-emphasis text-4xl  text-base leading-7 fw-semibold">
-                Our History
-            </h2><br>
-            <div class="m-0 mt-3 text-1xl tracking-tight ">
-                Each milestone in our journey represents our commitment to growth, innovation, and excellence, shaping our history from foundation to global expansion.
-            </div>
-        </div>
 
-    </div>
-
-    <!-- Timeline   -->
-    <div class="timeline-container">
-
-        <div class="timeline">
-            <div class="nav-btn" id="prev">&#60;</div>
-            <div class="timeline-item active" data-index="0">
-                <div class="icon"><i class="bi bi-house-fill"></i></div>
-                <span>1986</span>
-            </div>
-            <div class="timeline-item" data-index="1">
-                <div class="icon"><i class="bi bi-truck"></i></div>
-                <span>2000</span>
-            </div>
-            <div class="timeline-item" data-index="2">
-                <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
-                <span>2015</span>
-            </div>
-            <div class="timeline-item" data-index="3">
-                <div class="icon"><i class="bi bi-globe"></i></div>
-                <span>2016</span>
-            </div>
-            <div class="timeline-item" data-index="4">
-                <div class="icon"><i class="bi bi-tag"></i></div>
-                <span>2019</span>
-            </div>
-            <div class="timeline-item" data-index="5">
-                <div class="icon"><i class="bi bi-buildings"></i></div>
-                <span>2020</span>
-            </div>
-            <div class="timeline-item" data-index="6">
-                <div class="icon"><i class="bi bi-box-seam"></i></div>
-                <span>2023</span>
-            </div>
-            <div class="nav-btn" id="next">&#62;</div>
-        </div>
-        <p class="timeline-content show" id="timeline-text">
-            Foundation of the company 'Casa do Agricultor', an agricultural products business in the Espírito Santo region, founded by Mr. Djalma Santana.
-        </p>
-    </div>
-    <br><br><br>
 
     <!-- Our purpose our future Our Principles -->
-    <div class="overflow-hidden py-6 py-sm-7 py-xl-6 ">
+    <div id="ourValues" class="overflow-hidden py-6 py-sm-7 py-xl-6 ">
         <div class="container">
             <div class="row gy-5 row-cols-1 row-cols-lg-3">
                 <div class="col" data-aos-delay="0" data-aos="fade-left" data-aos-duration="3000">
@@ -433,7 +435,7 @@
     </div>
 
     <!-- About Us -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9">
+    <div id="aboutus" class="overflow-hidden py-7 py-sm-8 py-xl-9">
         <div class="container">
             <div class="row gy-5 align-items-center justify-content-between">
                 <div class="col-12 col-xl-6">
@@ -477,138 +479,65 @@
 
 
     <!-- Certificates -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9 ">
-        <h2 style="text-align: center; " class="text-center fw-semibold text-primary-emphasis text-5xl leading-9 " data-aos-delay="0 " data-aos="fade " data-aos-duration="3000 ">
-            Our Certificates <i class="bi bi-award"></i>
-        </h2>
-        <div class="container ">
+    <section style="background-color: rgb(245, 245, 245);" id="certificates" class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-gray-200">
+        <div class="container">
+            <h2 class="text-center fw-semibold text-primary-emphasis text-5xl leading-9 mb-5" data-aos="fade" data-aos-duration="3000">
+                Certificates <i class="bi bi-award"></i>
+            </h2>
 
-            <div id="carouselExampleIndicators " class="carousel slide pb-5 ">
-                <div class="carousel-indicators mb-0 ">
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="0 " class="active " aria-current="true " aria-label="Slide 1 "></button>
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="1 " aria-label="Slide 2 "></button>
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="2 " aria-label="Slide 3 "></button>
-                    <button type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide-to="3 " aria-label="Slide 4 "></button>
-                </div>
-                <div class="carousel-inner ">
+            <div class="row g-4 justify-content-center">
 
-                    <div class="carousel-item active ">
-                        <div class="mx-auto max-w-4xl text-center ">
-                            <img class="mx-auto " src="./assets/img/certificates/Asset 15.png " height="48 " alt="Client Company " loading="lazy ">
-                            <figure class="m-0 mt-5 ">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9 ">
-                                    <p class="m-0 ">
-                                        “Good Agricultural Practices - These solutions include a range of standards for safe, socially and environmentally responsible farming practices.”
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5 ">
-                                    <img class="mx-auto rounded-circle " width="40 " height="40 " src="./assets/img/small-team/st1.jpg " alt="Clinet Name " loading="lazy ">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base ">
-                                        <div class="fw-semibold text-body-emphasis ">John Bond</div>
-                                        <svg viewBox="0 0 2 2 " width="3 " height="3 " aria-hidden="true " class="mx-3 text-body-emphasis " fill="currentColor ">
-                                            <circle cx="1 " cy="1 " r="1 " />
-                                        </svg>
-                                        <div class="text-body-secondary ">Homeowner</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item ">
-                        <div class="mx-auto max-w-4xl text-center ">
-                            <img class="mx-auto " src="./assets/img/certificates/Asset 3.png " height="48 " alt="Client Company " loading="lazy ">
-                            <figure class="m-0 mt-5 ">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9 ">
-                                    <p class="m-0 ">
-                                        Add-on GLOBAL G.A.P. “Good social practices - Good agricultural practices aren’t just about products; they are also about people.”
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5 ">
-                                    <img class="mx-auto rounded-circle " width="40 " height="40 " src="./assets/img/small-team/st2.jpg " alt="Client name " loading="lazy ">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base ">
-                                        <div class="fw-semibold text-body-emphasis ">Judith Bond</div>
-                                        <svg viewBox="0 0 2 2 " width="3 " height="3 " aria-hidden="true " class="mx-3 text-body-emphasis " fill="currentColor ">
-                                            <circle cx="1 " cy="1 " r="1 " />
-                                        </svg>
-                                        <div class="text-body-secondary ">CEO of Circle</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item ">
-                        <div class="mx-auto max-w-4xl text-center ">
-                            <img class="mx-auto " src="./assets/img/certificates/Asset 4.png " height="48 " alt="Client Company " loading="lazy ">
-                            <figure class="m-0 mt-5 ">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9 ">
-                                    <p class="m-0 ">
-                                        “SMETA is an audit, which helps you to understand standards of labour, health and safety, environmental performance, and ethics within your own operations or at a supplier site.”
-
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5 ">
-                                    <img class="mx-auto rounded-circle " width="40 " height="40 " src="./assets/img/small-team/st3.jpg " alt="Client name " loading="lazy ">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base ">
-                                        <div class="fw-semibold text-body-emphasis ">Alex Bond</div>
-                                        <svg viewBox="0 0 2 2 " width="3 " height="3 " aria-hidden="true " class="mx-3 text-body-emphasis " fill="currentColor ">
-                                            <circle cx="1 " cy="1 " r="1 " />
-                                        </svg>
-                                        <div class="text-body-secondary ">CEO of Amara</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="carousel-item ">
-                        <div class="mx-auto max-w-4xl text-center ">
-                            <img class="mx-auto " src="./assets/img/certificates/Asset 1.png " height="48 " alt="Client Company " loading="lazy ">
-                            <figure class="m-0 mt-5 ">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9 ">
-                                    <p class="m-0 ">
-                                        “The USDA and EU organic seals certify that products are made following strict organic farming standards without synthetic chemicals or GMOs.”
-
-
-
-
-
-
-
-
-
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5 ">
-                                    <img class="mx-auto rounded-circle " width="40 " height="40 " src="./assets/img/small-team/st3.jpg " alt="Client name " loading="lazy ">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base ">
-                                        <div class="fw-semibold text-body-emphasis ">Alex Bond</div>
-                                        <svg viewBox="0 0 2 2 " width="3 " height="3 " aria-hidden="true " class="mx-3 text-body-emphasis " fill="currentColor ">
-                                            <circle cx="1 " cy="1 " r="1 " />
-                                        </svg>
-                                        <div class="text-body-secondary ">CEO of Amara</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
+                <!-- Card 1 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 text-center border-0 shadow-sm p-4">
+                        <img src="./assets/img/certificates/Asset 15.png" class="mx-auto mb-3" height="48" alt="Good Agricultural Practices" loading="lazy">
+                        <div class="card-body">
+                            <p class="fw-semibold text-body-emphasis text-base">
+                                “Good Agricultural Practices - These solutions include a range of standards for safe, socially and environmentally responsible farming practices.”
+                            </p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev d-none d-xl-inline " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="prev ">
-                    <span class="carousel-control-prev-icon rtl-flip " aria-hidden="true "></span>
-                    <span class="visually-hidden ">Previous</span>
-                </button>
-                <button class="carousel-control-next d-none d-xl-inline " type="button " data-bs-target="#carouselExampleIndicators " data-bs-slide="next ">
-                    <span class="carousel-control-next-icon rtl-flip " aria-hidden="true "></span>
-                    <span class="visually-hidden ">Next</span>
-                </button>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 text-center border-0 shadow-sm p-4">
+                        <img src="./assets/img/certificates/Asset 3.png" class="mx-auto mb-3" height="48" alt="GLOBAL G.A.P." loading="lazy">
+                        <div class="card-body">
+                            <p class="fw-semibold text-body-emphasis text-base">
+                                Add-on GLOBAL G.A.P. “Good social practices - Good agricultural practices aren’t just about products; they are also about people.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 text-center border-0 shadow-sm p-4">
+                        <img src="./assets/img/certificates/Asset 4.png" class="mx-auto mb-3" height="48" alt="SMETA Audit" loading="lazy">
+                        <div class="card-body">
+                            <p class="fw-semibold text-body-emphasis text-base">
+                                “SMETA is an audit, which helps you to understand standards of labour, health and safety, environmental performance, and ethics within your own operations or at a supplier site.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-xl-4">
+                    <div class="card h-100 text-center border-0 shadow-sm p-4">
+                        <img src="./assets/img/certificates/Asset 1.png" class="mx-auto mb-3" height="48" alt="USDA & EU Organic" loading="lazy">
+                        <div class="card-body">
+                            <p class="fw-semibold text-body-emphasis text-base">
+                                “The USDA and EU organic seals certify that products are made following strict organic farming standards without synthetic chemicals or GMOs.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-
+    </section>
 
     <!--  	
  	<div class="overflow-hidden pt-6 pt-sm-7 pt-xl-8 pb-7 pb-sm-8 pb-xl-9">
@@ -668,7 +597,7 @@
 
 
     <!-- Team -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9">
+    <div id="team" class="overflow-hidden py-7 py-sm-8 py-xl-9">
         <div class="container">
             <div class="row gx-sm-5 gy-5">
                 <div class="col-12 col-xl-4">

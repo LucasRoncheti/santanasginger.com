@@ -45,6 +45,7 @@
     <link rel="stylesheet" href="./assets/css/main.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 
+
     <meta property="og:title" content="Santana's Ginger">
     <meta property="og:description" content="Santanas Ginger offers premium ginger products with exceptional quality and flavor. 
 												From fresh ginger to processed goods, we ensure sustainable cultivation and excellent standards. 
@@ -194,7 +195,7 @@
 
 
     <!-- header body -->
-    <div class="overflow-hidden py-9 py-xl-10 position-relative">
+    <div id="products" class="overflow-hidden py-9 py-xl-10 position-relative">
         <img src="./assets/img/bg/products01.jpg" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover" alt="Meeting">
 
         <div class="position-absolute z-n1 top-0 h-100 w-100 " style="opacity: 0.85; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85);">
@@ -215,12 +216,52 @@
     </div>
 
 
+    <!-- slider de produtos -->
+
+    <div class="overflow-hidden py-7 ">
+        <div class="container">
+            <div class="row gy-5 align-items-center justify-content-between">
+                <div class="col-12 col-xl-5 order-first order-xl-last">
+                    <div class="mx-auto max-w-2xl text-center text-xl-start">
+                        <h2 id="slide-title" class="m-0 text-primary-emphasis text-base text-2xl leading-7 fw-semibold">
+                            Sweet Potato
+                        </h2>
+                        <p id="slide-heading" class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
+                            Sweet Potato Cultivation and Supply
+                        </p>
+                        <p id="slide-description" class="m-0 mt-4 text-body-secondary text-lg leading-8">
+                            Our experienced farmers bring years of expertise to every harvest. We focus on sustainable farming practices and adhere to the highest quality standards. From planting to distribution, we ensure fresh, nutritious, and high-quality sweet potatoes with
+                            efficiency and professionalism.
+                        </p>
+
+                        <!-- Miniaturas -->
+                        <div class="position-absolute  d-flex justify-content-center justify-content-xl-start flex-wrap gap-2 mt-4" id="thumbnails">
+                            <!-- Miniaturas serão injetadas via JS -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" col-12 col-xl-6">
+                    <div class="mx-auto  max-w-2xl position-relative">
+                        <div class="ratio ratio-4x3 gallery-item">
+                            <img id="slide-image" src="./assets/img/bg/bg3.jpg" class=" mt-7 object-fit-cover rounded-3 w-100" alt="presentation" loading="lazy">
+                        </div>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button id="prev-slide" class="btn btn-primary"><-</button>
+                            <button style="margin-left: 20px;" id="next-slide" class="btn btn-primary">-></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Why us -->
     <div class="overflow-hidden py-7 py-sm-8 py-xl-9">
         <div class="container">
             <div class="row gy-5 align-items-center justify-content-between">
-                <div class="col-12 col-xl-5 order-first order-xl-last">
+                <div class="col-12 col-xl-5">
                     <div class="mx-auto max-w-2xl">
                         <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
                             Why Choose Us
@@ -234,7 +275,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xl-6">
+                <div class="col-12 col-xl-6  order-first order-xl-last">
                     <div class="mx-auto max-w-2xl">
                         <div class="ratio ratio-4x3 gallery-item" data-aos-delay="200" data-aos="fade" data-aos-duration="3000">
                             <img src="./assets/img/bg/bg03.jpg" class="object-fit-cover rounded-3" alt="presentation">
@@ -247,140 +288,8 @@
 
 
 
-    <!-- Service 1 -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9">
-        <div class="container">
-            <div class="row gy-5 align-items-center justify-content-between">
-                <div class="col-12 col-xl-5">
-                    <div class="mx-auto max-w-2xl">
-                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
-                            Ginger
-                        </h2>
-                        <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
-                            Ginger Cultivation and Quality Assurance
-                        </p>
-                        <p class="m-0 mt-4 text-body text-lg leading-8">
-                            At Santana, we understand that premium ginger is essential for the success of your business or kitchen. Our ginger cultivation and quality assurance services cover a wide range of needs: Careful Harvesting, Post-Harvest Handling, Quality Control, Sustainable
-                            Farming Practices, Consistent Supply, and Custom Packaging Solutions.
-                        </p>
-                    </div>
-                </div>
 
-                <div class="col-12 col-xl-6">
-                    <div class="mx-auto max-w-2xl">
-                        <div class="ratio ratio-4x3 gallery-item" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
-                            <img src="./assets/img/bg/bg2.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Service 2 -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary">
-        <div class="container">
-            <div class="row gy-5 align-items-center justify-content-between">
-                <div class="col-12 col-xl-5 order-first order-xl-last">
-                    <div class="mx-auto max-w-2xl">
-                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
-                            Sweet Potato
-                        </h2>
-                        <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
-                            Sweet Potato Cultivation and Supply
-                        </p>
-                        <p class="m-0 mt-4 text-body-secondary text-lg leading-8">
-                            Our experienced farmers bring years of expertise to every harvest. We focus on sustainable farming practices and adhere to the highest quality standards. From planting to distribution, we ensure fresh, nutritious, and high-quality sweet potatoes with
-                            efficiency and professionalism.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-6">
-                    <div class="mx-auto max-w-2xl">
-                        <div class="ratio ratio-4x3 gallery-item" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
-                            <img src="./assets/img/bg/bg3.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Service 3 -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9">
-        <div class="container">
-            <div class="row gy-5 align-items-center justify-content-between">
-                <div class="col-12 col-xl-5">
-                    <div class="mx-auto max-w-2xl">
-                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
-                            Yam
-                        </h2>
-                        <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
-                            Yam Cultivation and Distribution
-                        </p>
-                        <p class="m-0 mt-4 text-body-secondary text-lg leading-8">
-                            Our dedicated team applies years of expertise to ensure the highest quality yams. With a focus on sustainable farming and rigorous quality standards, we deliver fresh, flavorful, and nutritious yams efficiently and professionally, from planting to delivery.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-6">
-                    <div class="mx-auto max-w-2xl">
-                        <div class="ratio ratio-4x3 gallery-item" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
-                            <img src="./assets/img/bg/bg4.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- limes -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-tertiary">
-        <div class="container">
-            <div class="row gy-5 align-items-center justify-content-between">
-                <div class="col-12 col-xl-5 order-first order-xl-last">
-                    <div class="mx-auto max-w-2xl">
-                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
-                            Lime
-                        </h2>
-                        <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
-                            Lime Cultivation and Distribution
-                        </p>
-                        <p class="m-0 mt-4 text-body-secondary text-lg leading-8">
-                            Our expertise ensures the finest Tahiti limes, cultivated with care and precision. We prioritize sustainable practices and strict quality control to deliver fresh, juicy, and vibrant limes, perfect for your business or kitchen needs.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-6">
-                    <div class="mx-auto max-w-2xl">
-                        <div class="ratio ratio-4x3 gallery-item" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
-                            <img src="./assets/img/bg/limes.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- big centered image -->
-    <!-- <div class="overflow-hidden py-7 py-sm-8 py-xl-9 d-none d-xl-block">
-		<div class="container">
-			<div class="ratio ratio-16x9">
-		        <img src="./assets/img/bg/Logo_Mockups_13_C.jpg" class="object-fit-cover rounded-3" alt="presentation" loading="lazy">
-		    </div>
-		</div>
-	</div> -->
-
-    <div class="container py-6">
+    <div id="gallery" class="container py-6">
         <h2 class="text-center">Our Gallery</h2><br>
         <div class="row gy-4">
             <!-- Imagem 1 -->
@@ -544,275 +453,8 @@
 
 
 
-    <!-- Certificates -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-secondary">
-        <h2 style="text-align: center;" class="text-center fw-semibold text-body-emphasis text-3xl leading-9" data-aos-delay="0" data-aos="fade" data-aos-duration="3000">
-            Our Certificates
-        </h2>
-        <div class="container">
 
-            <div id="carouselExampleIndicators" class="carousel slide pb-5">
-                <div class="carousel-indicators mb-0">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                </div>
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active">
-                        <div class="mx-auto max-w-4xl text-center">
-                            <img class="mx-auto" src="./assets/img/certificates/Asset 15.png" height="48" alt="Client Company" loading="lazy">
-                            <figure class="m-0 mt-5">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9">
-                                    <p class="m-0">
-                                        “Good Agricultural Practices - These solutions include a range of standards for safe, socially and environmentally responsible farming practices.”
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5">
-                                    <img class="mx-auto rounded-circle" width="40" height="40" src="./assets/img/small-team/st1.jpg" alt="Clinet Name" loading="lazy">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base">
-                                        <div class="fw-semibold text-body-emphasis">John Bond</div>
-                                        <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="mx-3 text-body-emphasis" fill="currentColor">
-                                            <circle cx="1" cy="1" r="1" />
-                                        </svg>
-                                        <div class="text-body-secondary">Homeowner</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="mx-auto max-w-4xl text-center">
-                            <img class="mx-auto" src="./assets/img/certificates/Asset 3.png" height="48" alt="Client Company" loading="lazy">
-                            <figure class="m-0 mt-5">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9">
-                                    <p class="m-0">
-                                        Add-on GLOBAL G.A.P. “Good social practices - Good agricultural practices aren’t just about products; they are also about people.”
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5">
-                                    <img class="mx-auto rounded-circle" width="40" height="40" src="./assets/img/small-team/st2.jpg" alt="Client name" loading="lazy">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base">
-                                        <div class="fw-semibold text-body-emphasis">Judith Bond</div>
-                                        <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="mx-3 text-body-emphasis" fill="currentColor">
-                                            <circle cx="1" cy="1" r="1" />
-                                        </svg>
-                                        <div class="text-body-secondary">CEO of Circle</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="mx-auto max-w-4xl text-center">
-                            <img class="mx-auto" src="./assets/img/certificates/Asset 4.png" height="48" alt="Client Company" loading="lazy">
-                            <figure class="m-0 mt-5">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9">
-                                    <p class="m-0">
-                                        “SMETA is an audit, which helps you to understand standards of labour, health and safety, environmental performance, and ethics within your own operations or at a supplier site.”
-
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5">
-                                    <img class="mx-auto rounded-circle" width="40" height="40" src="./assets/img/small-team/st3.jpg" alt="Client name" loading="lazy">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base">
-                                        <div class="fw-semibold text-body-emphasis">Alex Bond</div>
-                                        <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="mx-3 text-body-emphasis" fill="currentColor">
-                                            <circle cx="1" cy="1" r="1" />
-                                        </svg>
-                                        <div class="text-body-secondary">CEO of Amara</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="mx-auto max-w-4xl text-center">
-                            <img class="mx-auto" src="./assets/img/certificates/Asset 1.png" height="48" alt="Client Company" loading="lazy">
-                            <figure class="m-0 mt-5">
-                                <blockquote class="text-center fw-semibold text-body-emphasis text-2xl leading-9">
-                                    <p class="m-0">
-                                        “The USDA and EU organic seals certify that products are made following strict organic farming standards without synthetic chemicals or GMOs.”
-
-
-
-
-
-
-
-
-
-                                    </p>
-                                </blockquote>
-
-                                <!-- <figcaption class="m-0 mt-5">
-                                    <img class="mx-auto rounded-circle" width="40" height="40" src="./assets/img/small-team/st3.jpg" alt="Client name" loading="lazy">
-                                    <div class="mt-3 d-flex align-items-center justify-content-center text-base">
-                                        <div class="fw-semibold text-body-emphasis">Alex Bond</div>
-                                        <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="mx-3 text-body-emphasis" fill="currentColor">
-                                            <circle cx="1" cy="1" r="1" />
-                                        </svg>
-                                        <div class="text-body-secondary">CEO of Amara</div>
-                                    </div>
-                                </figcaption> -->
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev d-none d-xl-inline" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon rtl-flip" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next d-none d-xl-inline" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon rtl-flip" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- 
-	Clients
-	<div class="overflow-hidden py-6 py-sm-7 py-xl-8 bg-body-tertiary">
-		<div class="container">
-			<div class="max-w-2xl">
-				<h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold">
-					Our Clients
-				</h2>
-				<div class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
-					We're fortunate to have incredible clients.
-				</div>
-			</div>
-
-			<div class="mt-4">
-				<div class="glide glideHighLinear">
-					<div class="glide__track" data-glide-el="track">
-						<ul class="glide__slides align-items-center">
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo1.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo2.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo3.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo4.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo5.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo6.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo7.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo8.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>
-							<li class="glide__slide">
-								<div class="p-5">
-									<img src="assets/img/clients/logo9.png" class="img-fluid" alt="Clients" loading="lazy">
-								</div>
-							</li>		
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div> -->
-
-
-
-    <!-- FAQs
-	<div class="overflow-hidden py-7 py-sm-8 py-xl-9">
-	    <div class="container">
-	        <div class="row gy-5 g-sm-5">
-	            <div class="col-12 col-lg-5">
-	                <h2 class="m-0 text-body-emphasis tracking-tight leading-10 text-2xl fw-bold">
-	                    Frequently asked questions
-	                </h2>
-	                <p class="m-0 mt-3 text-body-secondary leading-7 text-base">
-	                    Our
-	                    <a href="javascript:;" class="text-decoration-none fw-semibold">
-	                        customer support
-	                    </a>
-	                    team is here to help you if you have any questions.
-	                </p>
-	            </div>
-
-	            <div class="col-12 col-lg-7">
-	                <dl class="m-0">
-	                    <div>
-	                        <dt class="text-body-emphasis leading-7 text-base fw-semibold">
-	                            How often should I have my roof inspected?
-	                        </dt>
-	                        <dd class="m-0 mt-2 text-body-secondary leading-7 text-base">
-	                            Regular inspections are crucial. We recommend scheduling one annually or after severe weather events. Early detection of issues prevents costly repairs later.
-	                        </dd>
-	                    </div>
-
-	                    <div class="mt-4 pt-3">
-	                        <dt class="text-body-emphasis leading-7 text-base fw-semibold">
-	                            What signs indicate that my roof needs repair?
-	                        </dt>
-	                        <dd class="m-0 mt-2 text-body-secondary leading-7 text-base">
-	                            Look out for missing or damaged shingles, leaks, sagging areas, or visible wear. If you notice any of these, it’s time to call our experts.
-	                        </dd>
-	                    </div>
-
-	                    <div class="mt-4 pt-3">
-	                        <dt class="text-body-emphasis leading-7 text-base fw-semibold">
-	                            Can I install a new roof over the existing one?
-	                        </dt>
-	                        <dd class="m-0 mt-2 text-body-secondary leading-7 text-base">
-	                            In some cases, yes. However, it’s essential to assess the condition of the existing roof. Our team can guide you based on your specific situation.
-	                        </dd>
-	                    </div>
-
-	                    <div class="mt-4 pt-3">
-	                        <dt class="text-body-emphasis leading-7 text-base fw-semibold">
-	                            How long does a typical roof installation take?
-	                        </dt>
-	                        <dd class="m-0 mt-2 text-body-secondary leading-7 text-base">
-	                            The timeline varies based on factors like roof size, materials, and weather. On average, a standard residential roof installation takes a few days to a week.
-	                        </dd>
-	                    </div>
-	                </dl>
-	            </div>
-	        </div>
-	    </div>
-	</div> -->
-
-
-
-    <!-- Call to action -->
-    <div class="pb-9 pt-7">
+    <div id="resources" class="pb-9 pt-7">
         <div class="container">
             <div class="py-6 position-relative text-white rounded-3">
                 <img src="./assets/img/bg/bglink.png" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover rounded-3" loading="lazy" alt="Meeting">
@@ -964,6 +606,9 @@
     <script src="./assets/libraries/aos/aos.js"></script>
     <script src="./assets/js/scripts.js"></script>
     <script src="./assets/js/menu-list.js"></script>
+    <script src="./assets/js/slider-products.js"></script>
+
+
 
 
 
