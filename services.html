@@ -44,6 +44,10 @@
     <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
     <link rel="stylesheet" href="./assets/css/main.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/slideGallery.css">
+    <!-- Include SwiperJS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/gallery.css">
 
 
     <meta property="og:title" content="Santana's Ginger">
@@ -141,7 +145,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-                <div class="offcanvas offcanvas-end border-0 rounded-start-0 rounded-start-sm-4" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div style="background-color: rgb(11, 11, 11);margin-left: 10%;" class="offcanvas offcanvas-end border-0 rounded-start-0 rounded-start-sm-4" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
                     <div class="offcanvas-header" style="padding: 2rem 2rem 1.5rem 2rem;">
                         <h5 class="offcanvas-title m-0" id="offcanvasNavbar2Label">
                             <a class="navbar-brand" href="javascript:;">
@@ -218,7 +222,7 @@
 
     <!-- slider de produtos -->
 
-    <div class="overflow-hidden py-7 ">
+    <div id="slideProducts" class="overflow-hidden py-7 ">
         <div class="container">
             <div class="row gy-5 align-items-center justify-content-between">
                 <div class="col-12 col-xl-5 order-first order-xl-last">
@@ -270,7 +274,7 @@
                             Discover what sets us apart and why we're the best choice
                         </p>
                         <p class="m-0 mt-4 text-body-secondary text-lg leading-8">
-                            Welcome to Santana, where tradition meets innovation. Our dedication to quality and customer satisfaction defines every product we offer. Explore our diverse range of products designed to meet your needs: Premium Ginger, Sweet Potatoes, Yams, and more.
+                            Where tradition meets innovation. Our dedication to quality and customer satisfaction defines every product we offer. Explore our diverse range of products designed to meet your needs: Premium Ginger, Sweet Potatoes, Yams, and more.
                         </p>
                     </div>
                 </div>
@@ -289,200 +293,167 @@
 
 
 
-    <div id="gallery" class="container py-6">
-        <h2 class="text-center">Our Gallery</h2><br>
-        <div class="row gy-4">
-            <!-- Imagem 1 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft01.jpg" alt="Imagem 1" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Soil Preparation:
-                        <p class="text-size-p">"Carefully prepared land with advanced irrigation techniques, ensuring sustainable and efficient cultivation."</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagem 2 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft02.jpg" alt="Imagem 2" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Field Cultivation:
-                        <p class="text-size-p">"Planting and nurturing crops in fertile soil to promote healthy and high-quality growth."</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagem 03 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft10.jpg" alt="Imagem 10" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Harvesting:
-                        <p class="text-size-p">"Harvesting performed with dedication by our experienced team, ensuring fresh and nutritious roots."</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagem 4 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft03.jpg" alt="Imagem 3" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Processing and Storage:
-                        <p class="text-size-p">"Organizing and packaging products with strict quality control, ready for distribution."</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagem 5 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft09.jpg " alt="Imagem 9" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Loading the Truck:
-                        <p class="text-size-p">"Our team efficiently loads the truck to ensure secure and timely transportation."</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagem 6 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft05.jpg" alt="Imagem 5" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Inside the Truck Container:
-                        <p class="text-size-p">"Carefully packed goods inside the truck, ensuring product integrity during transit."</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagem 7 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft08.jpg" alt="Imagem 8" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Inside the Airplane:
-                        <p class="text-size-p">"Products securely placed inside the airplane, ready for international shipping."</p>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Imagem 8-->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft06.jpg" alt="Imagem 6" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Delivery at Destination:
-                        <p class="text-size-p">"Products delivered safely and promptly to their final destination."</p>
-                    </div>
-
-                </div>
-            </div>
-
-            <!-- Imagem 10 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/IMG-20221114-WA0013.jpg" alt="Imagem 10" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Durable Packaging:
-                        <p class="text-size-p">"Our boxes are designed with durability in mind, ensuring safe transport and storage."</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Imagem 9 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft04.jpg" alt="Imagem 4" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Optimized for Freshness:
-                        <p class="text-size-p">"Specially designed boxes to preserve the freshness and quality of our products."</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Imagem 7 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/ft07.jpg" alt="Imagem 7" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Sustainable Materials:
-                        <p class="text-size-p">"We use eco-friendly materials for our packaging, reflecting our commitment to sustainability."</p>
-                    </div>
-                </div>
-            </div>
 
 
-
-
-            <!-- Imagem 10 -->
-            <div class="col-6 col-md-4 col-lg-3">
-                <div class="gallery-item-container">
-                    <div class="gallery-item">
-                        <img src="assets/img/gallery/IMG-20230624-WA0005.jpg" alt="Imagem 10" class="img-fluid">
-                    </div>
-                    <div class="gallery-caption">
-                        Customizable Solutions:
-                        <p class="text-size-p">"Our packaging can be customized to meet specific client needs, ensuring convenience and efficiency."</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-    <div id="resources" class="pb-9 pt-7">
+    <section style="margin-bottom: 10%;" id="gallery" class="gallery-section">
         <div class="container">
-            <div class="py-6 position-relative text-white rounded-3">
-                <img src="./assets/img/bg/bglink.png" class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover rounded-3" loading="lazy" alt="Meeting">
+            <h2 class="gallery-title">Our Gallery</h2><br><br>
 
-                <div class="position-absolute z-n1 top-0 h-100 w-100 bg-dark rounded-3" style="opacity: 0.85; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85);">
-                </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
 
-                <div class="px-6">
-                    <div class="mx-auto max-w-2xl">
-                        <h2 class="m-0 tracking-tight text-4xl fw-bold text-center">
-                            Explore Our Resources
-                        </h2>
-                        <p class="m-0 mt-4 text-lg leading-8 text-center">
-                            Connect with us and learn more! Access useful links for direct WhatsApp communication, our certificate gallery, and a detailed company presentation.
-                        </p>
-                        <div class="mt-4 pt-3 text-center">
-                            <a target="_blank" href="https://linktr.ee/santanasginger" class="btn btn-lg btn-primary text-white text-sm fw-semibold">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
-									<path d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"/>
-									<path d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"/>
-								  </svg> Click Here
-                            </a>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft01.jpg" class="gallery-img" alt="Soil Preparation">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-flower3"></i> Soil Preparation</h3>
+                                <p class="gallery-text">Carefully prepared land with advanced irrigation techniques, ensuring sustainable and efficient cultivation.</p>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft02.jpg" class="gallery-img" alt="Field Cultivation">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-seedling"></i> Field Cultivation</h3>
+                                <p class="gallery-text">Planting and nurturing crops in fertile soil to promote healthy and high-quality growth.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft10.jpg" class="gallery-img" alt="Harvesting">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-basket"></i> Harvesting</h3>
+                                <p class="gallery-text">Harvesting performed with dedication by our experienced team, ensuring fresh and nutritious roots.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft03.jpg" class="gallery-img" alt="Processing and Storage">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-box"></i> Processing and Storage</h3>
+                                <p class="gallery-text">Organizing and packaging products with strict quality control, ready for distribution.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft09.jpg" class="gallery-img" alt="Loading the Truck">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-truck"></i> Loading the Truck</h3>
+                                <p class="gallery-text">Our team efficiently loads the truck to ensure secure and timely transportation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft05.jpg" class="gallery-img" alt="Inside the Truck Container">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-box-seam"></i> Inside the Truck</h3>
+                                <p class="gallery-text">Carefully packed goods inside the truck, ensuring product integrity during transit.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft08.jpg" class="gallery-img" alt="Inside the Airplane">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-airplane"></i> Inside the Airplane</h3>
+                                <p class="gallery-text">Products securely placed inside the airplane, ready for international shipping.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 8 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft06.jpg" class="gallery-img" alt="Delivery at Destination">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-geo-alt"></i> Delivery at Destination</h3>
+                                <p class="gallery-text">Products delivered safely and promptly to their final destination.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 9 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/IMG-20221114-WA0013.jpg" class="gallery-img" alt="Durable Packaging">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-shield-check"></i> Durable Packaging</h3>
+                                <p class="gallery-text">Our boxes are designed with durability in mind, ensuring safe transport and storage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 10 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft04.jpg" class="gallery-img" alt="Optimized for Freshness">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-droplet-half"></i> Optimized for Freshness</h3>
+                                <p class="gallery-text">Specially designed boxes to preserve the freshness and quality of our products.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 11 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/ft07.jpg" class="gallery-img" alt="Sustainable Materials">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-recycle"></i> Sustainable Materials</h3>
+                                <p class="gallery-text">We use eco-friendly materials for our packaging, reflecting our commitment to sustainability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 12 -->
+                    <div class="swiper-slide">
+                        <div class="gallery-card">
+                            <img src="assets/img/gallery/IMG-20230624-WA0005.jpg" class="gallery-img" alt="Customizable Solutions">
+                            <div class="gallery-content">
+                                <h3 class="gallery-heading"><i class="bi bi-ui-checks"></i> Customizable Solutions</h3>
+                                <p class="gallery-text">Our packaging can be customized to meet specific client needs, ensuring convenience and efficiency.</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
-    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -615,3 +586,31 @@
 </body>
 
 </html>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 4,
+                },
+            },
+        });
+    });
+</script>

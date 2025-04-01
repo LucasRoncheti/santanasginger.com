@@ -44,6 +44,8 @@
     <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
     <link rel="stylesheet" href="./assets/css/main.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/bannersHome.css">
+
 
 
 
@@ -106,36 +108,6 @@
                         <ul id="menu-list" class="navbar-nav align-items-xl-center flex-grow-1 column-gap-4 row-gap-4 row-gap-xl-2">
                             <!--menu-list.js-->
 
-                            <!-- <li class="nav-item ">
-                            <div class="dropdown ">
-                                <button class="btn w-100 text-start dropdown-toggle px-3 text-body-emphasis bg-body-secondary-hover nav-link rounded-3 text-base leading-6 fw-semibold " type="button " data-bs-toggle="dropdown " aria-expanded="false ">
-								        Blog
-								    </button>
-                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-hover end-0 text-sm shadow bg-body-tertiary " style="--bs-dropdown-min-width: 9rem; ">
-                                    <li class="d-none d-xl-block " style="color: var(--bs-tertiary-bg); ">
-                                        <svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 " fill="currentColor " class="mt-n1 d-inline-block position-absolute top-0 end-0 translate-middle " viewBox="0 0 16 16 ">
-					                            <path class="carret-dropdown-path " d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z "/>
-					                        </svg>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog.html "> 
-								        		Blog page 
-								        	</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog-post.html "> 
-								        		Blog post 
-								        	</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item text-body-emphasis bg-body-secondary-hover py-2 text-base leading-6 fw-semibold " href="./blog-author.html "> 	Author page 
-								        	</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            </li> -->
-
-
                         </ul>
                     </div>
                 </div>
@@ -147,51 +119,26 @@
 
     <!-- header body -->
     <div class="overflow-hidden position-relative ">
-        <img src="./assets/img/bg/bg02.jpg " class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover " alt="Meeting ">
+        <img src="./assets/img/bg/bg02.jpg " class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover zoomImage" alt="Meeting ">
 
         <div class="overlay position-absolute z-n1 top-0 h-100 w-100 bg-dark " style="opacity: 0.45; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85); ">
         </div>
 
-        <div class="container ">
-            <div class="min-vh-100 row  ">
-                <div class="col-12 col-xl-8 ">
-                    <div class="pt-9 pt-md-10 pt-xl-11 pb-7 pb-md-8 pb-xl-9 max-w-2xl mx-auto mx-xl-0 ">
-                        <div class=" pt-2 ">
-                            <div class=" text-xl-start ">
-                                <h1 class="m-0 text-white tracking-tight text-6xl fw-bold " data-aos-delay="0 " data-aos="fade " data-aos-duration="3000 ">
-                                    Quality You Can Trust
-                                </h1>
-                                <!-- <p class="m-0 mt-4 text-white text-lg leading-8 " data-aos-delay="100 " data-aos="fade " data-aos-duration="3000 ">
-                                    We deliver premium products to meet the needs of residential and commercial markets, combining tradition and sustainability at every step of the process.
-                                </p> -->
-                                <!--
-                                <div class="mt-4 pt-3 d-flex align-items-center justify-content-center justify-content-xl-start column-gap-3 ">
-                                    <a href="./contact.html " class="btn btn-lg btn-primary text-white text-sm fw-semibold " data-aos-delay="200 " data-aos="fade " data-aos-duration="3000 ">
-		                                Contact us
-		                            </a>
-                                    <a href="#services " class="btn btn-lg text-white icon-link icon-link-hover text-sm leading-6 fw-semibold " data-aos-delay="300 " data-aos="fade " data-aos-duration="3000 ">
-		                                Learn more 
-		                                <span class="bi align-self-start left-to-right " aria-hidden="true ">→</span>
-		                                <span class="bi align-self-start right-to-left " aria-hidden="true ">←</span>
-		                            </a>
-                                </div> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div style="position: relative;" class="container min-vh-100 ">
 
-                <div class="col-12 col-xl-4">
-                    <div class="pt-3 pt-md-4 pt-xl-12 pb-2 pb-md-3 pb-xl-6">
-                        <!-- Botão que abre o modal -->
-                        <a class="video-play-button video-btn-modal position-relative" href="javascript:;" data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-src="https://www.youtube.com/embed/_X7RXQPUavI?si=s25LN7gC_BhM_8Lg">
-                            <span class="top-50 start-50 translate-middle"></span>
-                        </a>
-                    </div>
+
+            <div style="position: absolute;bottom: 5%; left: 50%;transform: translate(-50%);" class="fixed bottom-0 left-0 w-full flex justify-center items-center z-50">
+                <div class="pt-3 pt-md-15 pt-xl-15 pb-2 pb-md-3 pb-xl-6">
+                    <!-- Botão que abre o modal -->
+                    <a class="video-play-button video-btn-modal position-relative" href="javascript:;" data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-src="https://www.youtube.com/embed/_X7RXQPUavI?si=s25LN7gC_BhM_8Lg">
+                        <span class="top-50 start-50 translate-middle"></span>
+                    </a>
                 </div>
             </div>
+
+
         </div>
     </div>
-
 
 
     <!-- Modal -->
@@ -212,227 +159,103 @@
 
 
 
-    <!-- products -->
-    <div id="services " class="overflow-hidden py-7 py-sm-8 py-xl-9 ">
-        <div class="container ">
-            <div>
-                <div class="mx-auto max-w-2xl text-center ">
-                    <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold ">
-                        Products We Offer
+    <!-- HTML -->
+    <div class="secao-processo">
+        <div class="processo-container">
+
+            <!-- Imagem à esquerda -->
+            <div class="processo-imagem">
+                <img src="assets/img/bg/gengibre01.png" alt="Processo de Seleção e Embalagem">
+            </div>
+
+            <!-- Texto à direita -->
+            <div style=" background-color: #E84C36;" class="processo-texto">
+                <div class=" p-5 texto-conteudo">
+                    <h2>
+                        Premium ginger,<br> fresh from the farm.
                     </h2>
-                    <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold ">
-                        Explore our range of high-quality products tailored to meet your needs.
-                    </p>
-                    <p class="m-0 mt-4 text-body text-lg leading-8 ">
-                        At our company, we offer premium products backed by exceptional quality, comprehensive standards, and outstanding customer support.
+                    <p>
+                        Discover the authentic taste of our carefully selected roots.
                     </p>
                 </div>
             </div>
-            <div>
-                <div class="row row-cols-1 row-cols-xl-3 gy-5 gx-xl-4 mt-1 justify-content-center justify-content-xl-between ">
-                    <div class="col pt-5 pt-xl-4 ">
-                        <div class="max-w-xl mx-auto mx-xl-0 " data-aos-delay="0 " data-aos="fade " data-aos-duration="1000 ">
-                            <div class="ratio " style="--bs-aspect-ratio: 66.66%; ">
-                                <img src="./assets/img/bg/bg2.jpg " class="object-fit-cover rounded-3 " alt="Service image " loading="lazy ">
-                            </div>
 
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold ">
-                                Premium Ginger Care and Selection
-                            </h3>
-
-                            <!-- Remove line-clamp-2 if you need more lines or add line-clamp-3 -->
-                            <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6 ">
-                                We prioritize careful cultivation and selection to ensure the freshest and highest quality ginger. Trust us to deliver excellence in every root.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col pt-5 pt-xl-4 ">
-                        <div class="max-w-xl mx-auto mx-xl-0 " data-aos-delay="100 " data-aos="fade " data-aos-duration="1000 ">
-                            <div class="ratio " style="--bs-aspect-ratio: 66.66%; ">
-                                <img src="./assets/img/bg/bg3.jpg " class="object-fit-cover rounded-3 " alt="Service image " loading="lazy ">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold ">
-                                Sweet Potato Excellence
-                            </h3>
-
-                            <!-- Remove line-clamp-2 if you need more lines or add line-clamp-3 -->
-                            <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6 ">
-                                Our commitment to sustainable farming guarantees sweet potatoes that are fresh, nutritious, and delicious. Count on us for the finest harvests.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col pt-5 pt-xl-4 ">
-                        <div class="max-w-xl mx-auto mx-xl-0 " data-aos-delay="200 " data-aos="fade " data-aos-duration="1000 ">
-                            <div class="ratio " style="--bs-aspect-ratio: 66.66%; ">
-                                <img src="./assets/img/bg/bg4.jpg " class="object-fit-cover rounded-3 " alt="Service image " loading="lazy ">
-                            </div>
-
-                            <h3 class="m-0 mt-4 text-body-emphasis text-lg leading-6 fw-semibold ">
-                                Yam Quality and Consistency
-                            </h3>
-
-                            <!-- Remove line-clamp-2 if you need more lines or add line-clamp-3 -->
-                            <p class="m-0 mt-3 text-body-secondary line-clamp-2 text-sm leading-6 ">
-                                We focus on precise cultivation and care to provide yams that are rich in flavor and nutrients. Rely on us for consistency and premium quality.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="text-center pt-7 ">
-                <a href="./services.html " class="btn btn-lg btn-primary text-white icon-link icon-link-hover text-sm leading-6 fw-semibold ">
-                    Learn more 
-                    <span class="bi align-self-start left-to-right " aria-hidden="true ">→</span>
-                    <span class="bi align-self-start right-to-left " aria-hidden="true ">←</span>
-                </a>
-            </div>
         </div>
     </div>
 
 
+    <div class="containerImagesProducts">
+        <div class="texto-centralizado">
+            <h2>Explore our full range of fresh root crops.</h2>
+        </div>
+        <a href="services.html#slideProducts">
+            <div class="galeria-container">
+                <div class="imagem" id="img1"><img src="assets/img/bg/bg2.jpg" alt="Descrição 1"></div>
+                <div class="imagem" id="img2"><img src="assets/img/bg/bg3.jpg" alt="Descrição 2"></div>
+                <div class="imagem" id="img3"><img src="assets/img/bg/bg4.jpg" alt="Descrição 3"></div>
+                <div class="imagem" id="img4"><img src="assets/img/bg/limes.jpg" alt="Descrição 4"></div>
+            </div>
+        </a>
+        <a style="text-decoration: none;" href="services.html#slideProducts">
+            <div id="img5" class="texto-centralizado imagem   ">
+                <p>Explore our full range of fresh root crops. --></p>
+            </div>
+        </a>
+    </div>
 
-    <!-- About Us -->
-    <div class="overflow-hidden py-7 py-sm-8 py-xl-9 ">
-        <div class="container ">
-            <div class="row gy-5 align-items-center justify-content-between ">
-                <div class="col-12 col-xl-5 order-last ">
-                    <div class="mx-auto max-w-2xl ">
-                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold ">
-                            Teamwork Makes the Difference
+
+    <!-- HTML -->
+    <a style="text-decoration: none;" href="about.html#ourhistory">
+        <div class="secao-processo">
+            <div class="processo-container">
+                <!-- Texto à esquerda -->
+                <div class="processo-texto">
+                    <div class=" p-5 texto-conteudo">
+                        <h2>
+                            We grow with tradition and innovation.
                         </h2>
-                        <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold ">
-                            A Legacy of Excellence
+                        <p class="position-relative">
+                            Learn how our journey shapes the quality we deliver. -->
+
                         </p>
-                        <p class="m-0 mt-4 text-body-secondary text-lg leading-8 ">
-                            Santana is a proud family-owned business that carries our family name with honor. For over 20 years, we have dedicated ourselves to innovation and enhancing product quality, all while upholding a steadfast commitment to food safety. We invite you to explore
-                            this presentation and discover what makes us unique.
+                    </div>
+                </div>
+                <!-- Imagem à esquerda -->
+                <div class="processo-imagem">
+                    <img src="assets/img/bg/bg04.jpg" alt="Processo de Seleção e Embalagem">
+
+
+                </div>
+
+            </div>
+        </div>
+    </a>
+
+    <!-- HTML -->
+    <a style="text-decoration: none;" href="exportacao.html">
+        <div class="secao-processo">
+            <div class="processo-container">
+                <!-- Imagem à esquerda -->
+                <div class="processo-imagem">
+                    <img src="assets/img/bg/export.png" alt="Processo de Seleção e Embalagem">
+                </div>
+                <!-- Texto à direita -->
+                <div class="processo-texto">
+                    <div class=" p-5 texto-conteudo">
+                        <h2>
+                            We’re in Brazil, the US and Europe.
+                        </h2>
+                        <p class="position-relative">
+                            Seamless shipping and trusted partners around the world. -->
                         </p>
-                        <div class="mt-4 ">
-                            <a href="./about.html " class="icon-link icon-link-hover text-decoration-none text-sm leading-6 fw-bold ">
-			                    Learn more 
-			                    <span class="bi align-self-start left-to-right " aria-hidden="true ">→</span>
-			                    <span class="bi align-self-start right-to-left " aria-hidden="true ">←</span>
-			                </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-6 ">
-                    <div class="mx-auto max-w-2xl ">
-                        <div class="ratio ratio-4x3 " data-aos-delay="0 " data-aos="fade " data-aos-duration="3000 ">
-                            <img src="./assets/img/bg/bg5.jpg " class="object-fit-cover rounded-3 " alt="about us " loading="lazy ">
-                        </div>
                     </div>
                 </div>
             </div>
-
-
         </div>
-    </div>
+    </a>
 
 
-    <!-- Network woldwid -->
-    <div class="overflow-hidden py-6 py-sm-7 py-xl-8 bg-body-verde ">
-        <div class="container ">
-            <div class="row align-items-center ">
-                <!-- Coluna de texto -->
-                <div class="col-md-6 ">
-                    <h2 class="m-0 text-primary-emphasis text-5xl text-base leading-7 fw-semibold ">
-                        Networking Worldwide
-                    </h2> <br>
-                    <div class="m-0 mt-4 text-body-secondary text-lg leading-8 ">
-                        Our headquarters are based in Brazil, with additional branches in the USA and Europe. <br><br> Whether you need a full container or just a few pallets, you can conveniently purchase directly through our efficient distribution network.
-                    </div>
-                    <div class="mt-4 ">
-                        <a href="./exportacao.html " class="icon-link icon-link-hover text-decoration-none text-sm leading-6 fw-bold ">
-                            Learn more 
-                            <span class="bi align-self-start left-to-right " aria-hidden="true ">→</span>
-                            <span class="bi align-self-start right-to-left " aria-hidden="true ">←</span>
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Coluna de imagem -->
-                <div class="col-md-6 text-center text-md-end ">
-                    <img class="img-fluid " src="assets/img/bg/Grupo 16.png" alt="Map ">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Certificates -->
-    <section style="background-color: rgb(245, 245, 245);" id="certificates" class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-gray-200">
-        <div class="container">
-            <h2 class="text-center fw-semibold text-primary-emphasis text-5xl leading-9 mb-5" data-aos="fade" data-aos-duration="3000">
-                Certificates <i class="bi bi-award"></i>
-            </h2>
-
-            <div class="row g-4 justify-content-center">
-
-                <!-- Card 1 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4">
-                        <img src="./assets/img/certificates/Asset 15.png" class="mx-auto mb-3" height="48" alt="Good Agricultural Practices" loading="lazy">
-                        <div class="card-body">
-                            <p class="fw-semibold text-body-emphasis text-base">
-                                “Good Agricultural Practices - These solutions include a range of standards for safe, socially and environmentally responsible farming practices.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4">
-                        <img src="./assets/img/certificates/Asset 3.png" class="mx-auto mb-3" height="48" alt="GLOBAL G.A.P." loading="lazy">
-                        <div class="card-body">
-                            <p class="fw-semibold text-body-emphasis text-base">
-                                Add-on GLOBAL G.A.P. “Good social practices - Good agricultural practices aren’t just about products; they are also about people.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4">
-                        <img src="./assets/img/certificates/Asset 4.png" class="mx-auto mb-3" height="48" alt="SMETA Audit" loading="lazy">
-                        <div class="card-body">
-                            <p class="fw-semibold text-body-emphasis text-base">
-                                “SMETA is an audit, which helps you to understand standards of labour, health and safety, environmental performance, and ethics within your own operations or at a supplier site.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-md-6 col-xl-4">
-                    <div class="card h-100 text-center border-0 shadow-sm p-4">
-                        <img src="./assets/img/certificates/Asset 1.png" class="mx-auto mb-3" height="48" alt="USDA & EU Organic" loading="lazy">
-                        <div class="card-body">
-                            <p class="fw-semibold text-body-emphasis text-base">
-                                “The USDA and EU organic seals certify that products are made following strict organic farming standards without synthetic chemicals or GMOs.”
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- big image -->
-    <div class="w-100 overflow-hidden h-100 ">
-        <div class="ratio   ratio-16x9 mt-7 mt-sm-8 mt-xl-9 ">
-            <a href="./about.html"><img src="./assets/img/bg/Logo_Mockups_13_C.jpg " class="object-fit-cover rounded-3 " alt="presentation " loading="lazy "></a>
-        </div>
-    </div>
 
 
 
@@ -440,15 +263,15 @@
 
 
     <!-- Contact us -->
-    <div id="contact-us " class="overflow-hidden py-7 py-sm-8 py-xl-9 bg-body-secondary ">
+    <div style="background-color: #2b7d49; color: white;" id="contact-us " class="overflow-hidden py-7 py-sm-8 py-xl-9 ">
         <div class="container ">
             <div class="row gy-5 gx-sm-5 ">
-                <div class="col-12 col-xl-5 pt-4 ">
+                <div class="col-12  pt-4 ">
                     <div class="mx-auto max-w-2xl ">
-                        <h2 class="m-0 text-primary-emphasis text-base leading-7 fw-semibold ">
+                        <h2 class="m-0  text-base leading-7 fw-semibold ">
                             Get in touch
                         </h2>
-                        <p class="m-0 mt-2 text-body-emphasis text-3xl tracking-tight fw-bold ">
+                        <p class="m-0 mt-2 text-3xl tracking-tight fw-bold ">
                             Have any questions or need assistance? Contact us today!
                         </p>
                     </div>
@@ -744,4 +567,24 @@
         showSlide(0);
         startInterval();
     });
+</script>
+
+<script>
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const container = entry.target;
+                container.querySelectorAll('.imagem').forEach(el => el.classList.add('ativo'));
+                if (container.querySelector('.texto-centralizado')) {
+                    container.querySelector('.texto-centralizado').classList.add('ativo');
+                }
+                observer.unobserve(container); // só anima uma vez
+            }
+        });
+    }, {
+        threshold: 0.5 // ativa quando 50% do container estiver visível
+    });
+
+    const galeria = document.querySelector('.containerImagesProducts');
+    if (galeria) observer.observe(galeria);
 </script>
