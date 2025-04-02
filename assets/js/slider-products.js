@@ -1,32 +1,45 @@
 const slides = [{
         title: 'Ginger',
         heading: 'Ginger Cultivation and Quality Assurance',
-        description: 'At Santana, we understand that premium ginger is essential for the success of your business or kitchen. Our ginger cultivation and quality assurance services cover a wide range of needs: Careful Harvesting, Post-Harvest Handling, Quality Control, Sustainable Farming Practices, Consistent Supply, and Custom Packaging Solutions.',
+        description: 'Premium ginger grown with sustainable practices, strict quality control, and custom packaging solutions.',
         image: './assets/img/bg/bg2.jpg',
-        thumb: './assets/img/bg/bg2.jpg'
+        thumb: './assets/img/bg/bg2.jpg',
+        weight: '13.6kg',
+        pallets: '70 ',
+        size: '+ 250g'
     },
     {
         title: 'Sweet Potato',
         heading: 'Sweet Potato Cultivation and Supply',
-        description: 'Our experienced farmers bring years of expertise to every harvest. We focus on sustainable farming practices and adhere to the highest quality standards. From planting to distribution, we ensure fresh, nutritious, and high-quality sweet potatoes with efficiency and professionalism.',
+        description: 'Sustainably grown sweet potatoes with high quality standards and efficient distribution.',
         image: './assets/img/bg/bg3.jpg',
-        thumb: './assets/img/bg/bg3.jpg'
+        thumb: './assets/img/bg/bg3.jpg',
+        weight: '10kg',
+        pallets: '110 ',
+        size: 'S/M/L2/L2'
     },
     {
-        title: 'Yam',
-        heading: 'Yam Cultivation and Distribution',
-        description: 'Our dedicated team applies years of expertise to ensure the highest quality yams. With a focus on sustainable farming and rigorous quality standards, we deliver fresh, flavorful, and nutritious yams efficiently and professionally, from planting to delivery. Welcome to Santana, where tradition meets innovation. Our dedication to quality and customer satisfaction defines every product we offer. Explore our diverse range of products designed to meet your needs: Premium Ginger, Sweet Potatoes, Yams, and more.',
+        title: 'Eddoes',
+        heading: 'Eddoes Cultivation and Distribution',
+        description: 'Fresh, nutritious eddoes produced with care, blending tradition, innovation, and sustainability.',
         image: './assets/img/bg/bg4.jpg',
-        thumb: './assets/img/bg/bg4.jpg'
+        thumb: './assets/img/bg/bg4.jpg',
+        weight: '18kg',
+        pallets: '70 ',
+        size: 'Sortido'
     },
     {
         title: 'Lime',
         heading: 'Lime Cultivation and Distribution',
-        description: 'Our expertise ensures the finest Tahiti limes, cultivated with care and precision. We prioritize sustainable practices and strict quality control to deliver fresh, juicy, and vibrant limes, perfect for your business or kitchen needs.',
+        description: 'Juicy Tahiti limes grown with precision and delivered fresh with a focus on quality and sustainability.',
         image: './assets/img/bg/limes.jpg',
-        thumb: './assets/img/bg/limes.jpg'
+        thumb: './assets/img/bg/limes.jpg',
+        weight: '4,5kg',
+        pallets: '240 ',
+        size: '42 48, 54, 60, 63'
     }
 ];
+
 
 let currentSlide = 0;
 
@@ -35,6 +48,9 @@ const headingEl = document.getElementById('slide-heading');
 const descriptionEl = document.getElementById('slide-description');
 const imageEl = document.getElementById('slide-image');
 const thumbnailsEl = document.getElementById('thumbnails');
+const weightEl = document.getElementById('weight');
+const palletsEl = document.getElementById('pallets');
+const sizeEl = document.getElementById('size');
 
 function updateSlide(index) {
     const slide = slides[index];
@@ -44,6 +60,10 @@ function updateSlide(index) {
     headingEl.textContent = slide.heading;
     descriptionEl.textContent = slide.description;
     imageEl.src = slide.image;
+    weightEl.textContent = slide.weight
+    palletsEl.textContent = slide.pallets
+    sizeEl.textContent = slide.size
+
 
     // Atualiza o destaque da miniatura ativa
     document.querySelectorAll('.thumbnail-img').forEach((thumb, i) => {
