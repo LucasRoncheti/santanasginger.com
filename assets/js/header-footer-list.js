@@ -3,6 +3,7 @@ const footer = document.querySelector('footer')
 
 //header 
 const menuList = () => {
+    /* html */
     list.innerHTML = `
     <li class="nav-item">
       <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href="./index.html" class="px-3 bg-green-hover nav-link rounded-3 text-base leading-6 fw-semibold">
@@ -48,7 +49,10 @@ const menuList = () => {
 
     
 
-    <li class="nav-item ms-xl-auto">
+    <li style="display:flex;max-height:40px;align-items:center;justify-content:center;gap:15px;" class="nav-item ms-xl-auto    ">
+    <a href="https://www.instagram.com/santanas.ginger/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
+    <a href="https://wa.me/+5527999701585" target="_blank"><i class="bi bi-whatsapp text-white"></i></a>
+     
       <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href="./contact.html" class="px-3 bg-body-secondary-hover border nav-link rounded-3 text-base leading-6 fw-semibold text-center">
         Contact Us
       </a>
@@ -77,7 +81,7 @@ const footerList = () => {
             providing premium quality ginger for both domestic and international markets.
           </p>
           <p class="m-0 mt-2 text-body-secondary text-lg leading-8">
-            A family-run business with tradition and a strong commitment to excellence.
+            A family Owned business with tradition and a strong commitment to excellence.
           </p>
         </div>
       </div>
