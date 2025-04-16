@@ -51,7 +51,7 @@ const menuList = () => {
 
     <li style="display:flex;max-height:40px;align-items:center;justify-content:center;gap:15px;" class="nav-item ms-xl-auto    ">
     <a href="https://www.instagram.com/santanas.ginger/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
-    <a href="https://wa.me/+5527999701585" target="_blank"><i class="bi bi-whatsapp text-white"></i></a>
+    <a href="https://wa.me/+5527996561133" target="_blank"><i class="bi bi-whatsapp text-white"></i></a>
      
       <a style="color: white;" onmouseover="this.style.color='#4caa47'" onmouseout="this.style.color='white'" href="./contact.html" class="px-3 bg-body-secondary-hover border nav-link rounded-3 text-base leading-6 fw-semibold text-center">
         Contact Us
