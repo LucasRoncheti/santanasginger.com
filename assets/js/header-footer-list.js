@@ -47,7 +47,19 @@ const menuList = () => {
       </ul>
     </li>
 
-    
+
+
+    <div class="nav-item dropdown d-flex align-items-center gap-3">
+      <div   onclick="selecionarIdioma('pt')" id="pt" class="w-auto d-flex align-items-center gap-3  cursor-pointer flagUnActive ">
+        <img title="Alterar para Português" style="cursor:pointer;"  src="./assets/flags/pt-br.svg" height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
+      </div>
+      <div  onclick="selecionarIdioma('en')" id="en" class="w-auto d-flex align-items-center gap-3  cursor-pointer flagActive ">
+        <img  title="Change to English"  style="cursor:pointer;"  src="./assets/flags/eng.svg" height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
+      </div>
+      <div  onclick="selecionarIdioma('es')" id="es" class="w-auto d-flex align-items-center gap-3  cursor-pointer  flagUnActive ">
+      <img title="Cambiar a español" style="cursor:pointer;"     src="./assets/flags/spn.svg" height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
+      </div>
+    </div>
 
     <li style="display:flex;max-height:40px;align-items:center;justify-content:center;gap:15px;" class="nav-item ms-xl-auto    ">
     <a href="https://www.instagram.com/santanas.ginger/" target="_blank"><i class="bi bi-instagram text-white"></i></a>
