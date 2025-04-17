@@ -1,512 +1,328 @@
-<!doctype html>
-<html lang="en" dir="ltr" data-bs-theme="auto">
+<!DOCTYPE html>
+
+<html data-bs-theme="auto" dir="ltr" lang="pt-br">
 
 <head>
-
     <!-- Include JavaScript for color modes -->
-    <script src="./assets/js/color-modes.js"></script>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <script src="../assets/js/color-modes.js"></script>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <!-- Update the 'content' attribute to reflect the actual content description -->
-    <meta name="description" content="Santanas Ginger offers premium ginger products with exceptional quality and flavor. 
-     From fresh ginger to processed goods, we ensure sustainable cultivation and excellent standards. 
-     Discover the best ginger for your needs!">
-
-
+    <meta
+        content="A Santanas Ginger entrega gengibre brasileiro premium ao mundo. Produtos naturais de alta qualidade e sabor incomparável, confiáveis nos mercados globais."
+        name="description" />
     <!-- Modify the 'content' attribute to include appropriate keywords -->
-    <meta name="keywords" content="ginger, premium ginger,
+    <meta content="ginger, premium ginger,
               fresh ginger, organic ginger, ginger products,
                ginger cultivation, high-quality ginger, sustainable ginger, 
-               ginger supplier, ginger export">
-
-
-    <meta name="author" content="Lucas Roncheti Designer">
-    <meta name="generator" content="Bootstrap">
-
+               ginger supplier, ginger export" name="keywords" />
+    <meta content="Lucas Roncheti Designer" name="author" />
+    <meta content="Bootstrap" name="generator" />
     <!-- Change the text within the <title> tag to match the webpage's content -->
     <title> Santana ginger </title>
-
     <!-- 
         Set the website's favicon and Apple touch icon using the files in the assets/logo folder. You can change these files to your own icons by replacing them with the same names and sizes.
 
         Be careful if you change the site.webmanifest file, as you need to update the src attribute of the icons array to match the new path of your icon files. Otherwise, your icons may not display correctly on some devices. 
     -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/logo/favicon-16x16.png">
-    <link rel="icon" type="image/x-icon" href="./assets/logo/favicon.ico">
-    <link rel="manifest" href="./assets/logo/site.webmanifest">
-
+    <link href="../assets/logo/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png" />
+    <link href="../assets/logo/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png" />
+    <link href="../assets/logo/favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="../assets/logo/site.webmanifest" rel="manifest" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="./assets/libraries/glide/css/glide.core.min.css">
-    <link rel="stylesheet" href="./assets/libraries/aos/aos.css">
-    <link rel="stylesheet" href="./assets/css/main.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/bannersHome.css">
-
-
-
-
-
-    <meta property="og:title" content="Santana's Ginger">
-    <meta property="og:description" content="Santanas Ginger offers premium ginger products with exceptional quality and flavor. 
+    <link href="../assets/libraries/glide/css/glide.core.min.css" rel="stylesheet" />
+    <link href="../assets/libraries/aos/aos.css" rel="stylesheet" />
+    <link href="../assets/css/main.min.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/bannersHome.css" rel="stylesheet" />
+    <meta content="Santana's Ginger" property="og:title" />
+    <meta content="Santanas Ginger offers premium ginger products with exceptional quality and flavor. 
 												From fresh ginger to processed goods, we ensure sustainable cultivation and excellent standards. 
-												Discover the best ginger for your needs!">
+												Discover the best ginger for your needs!" property="og:description" />
     <!-- Update with actual absolute image URL like: https://example.com/main.jpg -->
-    <meta property="og:image" content="https://santanasginger.com/index.html">
+    <meta content="https://santanasginger.com/index.html" property="og:image" />
     <!-- Update with the absolute URL of the content like: https://example.com/index.html -->
-    <meta property="og:url" content="https://santanasginger.com/index.html">
+    <meta content="https://santanasginger.com/index.html" property="og:url" />
     <!-- Update with the type of object you’re sharing. (e.g., article, website, etc.) -->
-    <meta property="og:type" content="website">
+    <meta content="website" property="og:type" />
     <!-- Defines the content language -->
-    <meta property="og:locale" content="en_US">
-
+    <meta content="pt_BR" property="og:locale" />
     <!--Bootstrap section -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
 </head>
 
 <body>
-
-
     <!-- loader-wrapper -->
     <div class="loader-wrapper">
         <div class="spinner-border text-primary p-5" role="status">
             <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-
-
-
     <!-- header top -->
-    <header class="navigation position-absolute w-100 bg-body-tertiary text-white shadow border-bottom border-light border-opacity-10 rounded-bottom-3 rounded-bottom-sm-4">
-        <nav class="navbar navbar-expand-xl" aria-label="Offcanvas navbar large">
+    <header
+        class="navigation position-absolute w-100 bg-body-tertiary text-white shadow border-bottom border-light border-opacity-10 rounded-bottom-3 rounded-bottom-sm-4">
+        <nav aria-label="Offcanvas navbar large" class="navbar navbar-expand-xl">
             <div class="container py-1">
-                <a href="./index.html" class="navbar-brand">
-                    <img src="./assets/logo/logo.png" height="40" alt="logo">
+                <a class="navbar-brand" href="./index.html">
+                    <img alt="logo" height="40" src="../assets/logo/logo.png" />
                 </a>
-
-                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-	                <span class="navbar-toggler-icon"></span>
-	            </button>
-
-                <div style="background-color: rgb(11, 11, 11);margin-left: 10%;" class=" flex-column justify-content-arround offcanvas offcanvas-end border-0 rounded-start-0 rounded-start-sm-4" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <button aria-controls="offcanvasNavbar2" aria-label="Toggle navigation" class="navbar-toggler ms-auto"
+                    data-bs-target="#offcanvasNavbar2" data-bs-toggle="offcanvas" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div aria-labelledby="offcanvasNavbar2Label"
+                    class="flex-column justify-content-arround offcanvas offcanvas-end border-0 rounded-start-0 rounded-start-sm-4"
+                    id="offcanvasNavbar2" style="background-color: rgb(11, 11, 11);margin-left: 10%;" tabindex="-1">
                     <div class="offcanvas-header" style="padding: 2rem 2rem 1.5rem 2rem;">
                         <h5 class="offcanvas-title m-0" id="offcanvasNavbar2Label">
                             <a class="navbar-brand" href="javascript:;">
-                                <img src="./assets/logo/logo.png" height="32" alt="logo">
+                                <img alt="logo" height="32" src="./assets/logo/logo.png" />
                             </a>
                         </h5>
-                        <button type="button" class="btn-close text-white " data-bs-dismiss="offcanvas" aria-label="Close">X</button>
+                        <button aria-label="Close" class="btn-close text-white" data-bs-dismiss="offcanvas"
+                            type="button">X</button>
                     </div>
-
                     <div class="offcanvas-body">
-                        <ul id="menu-list" class="navbar-nav align-items-xl-center flex-grow-1 column-gap-4 row-gap-4 row-gap-xl-2">
+                        <ul class="navbar-nav align-items-xl-center flex-grow-1 column-gap-4 row-gap-4 row-gap-xl-2"
+                            id="menu-list">
                             <!--menu-list.js-->
-
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
-
-
     <!-- header body -->
-    <div class="overflow-hidden position-relative  ">
-        <img src="./assets/img/bg/bg02.jpg " class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover zoomImage" alt="Meeting ">
-
-        <div class="overlay position-absolute z-n1 top-0 h-100 w-100 bg-dark " style="opacity: 0.45; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85); ">
+    <div class="overflow-hidden position-relative">
+        <img alt="Meeting " class="position-absolute z-n1 top-0 h-100 w-100 object-fit-cover zoomImage"
+            src="../assets/img/bg/bg02.jpg " />
+        <div class="overlay position-absolute z-n1 top-0 h-100 w-100 bg-dark"
+            style="opacity: 0.45; mix-blend-mode: multiply; filter: contrast(1.15) brightness(0.85); ">
         </div>
-
-        <div style="position: relative;" class="container min-vh-100 ">
-
-
-            <div style="position: absolute;bottom: 5%; left: 50%;transform: translate(-50%);" class="fixed bottom-0 left-0 w-full flex justify-center items-center z-50">
+        <div class="container min-vh-100" style="position: relative;">
+            <div class="fixed bottom-0 left-0 w-full flex justify-center items-center z-50"
+                style="position: absolute;bottom: 5%; left: 50%;transform: translate(-50%);">
                 <div class="pt-3 pt-md-15 pt-xl-15 pb-2 pb-md-3 pb-xl-6">
                     <!-- Botão que abre o modal -->
-                    <a class="video-play-button video-btn-modal position-relative" href="javascript:;" data-bs-toggle="modal" data-bs-target="#videoModal" data-bs-src="https://www.youtube.com/embed/_X7RXQPUavI?si=s25LN7gC_BhM_8Lg">
+                    <!-- Vídeo youtube -->
+                    <a class="video-play-button video-btn-modal position-relative"
+                        data-bs-src="https://www.youtube.com/embed/_X7RXQPUavI?si=s25LN7gC_BhM_8Lg"
+                        data-bs-target="#videoModal" data-bs-toggle="modal" href="javascript:;">
                         <span class="top-50 start-50 translate-middle"></span>
                     </a>
                 </div>
             </div>
-
-
         </div>
     </div>
-
-
     <!-- Modal -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+    <div aria-hidden="true" class="modal fade" id="videoModal" tabindex="-1">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content border-0" style="border-radius: 0.75rem;">
                 <div class="modal-header border-0 p-0">
-                    <button type="button" class="btn-close bg-white border position-absolute top-0 end-0 translate-middle me-n3 me-sm-n5 mt-n4 rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button aria-label="Close"
+                        class="btn-close bg-white border position-absolute top-0 end-0 translate-middle me-n3 me-sm-n5 mt-n4 rounded-circle p-2"
+                        data-bs-dismiss="modal" type="button"></button>
                 </div>
                 <div class="modal-body p-0">
                     <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item iframeVideo" style="border-radius: 0.75rem;" allow="autoplay" allowfullscreen></iframe>
+                        <iframe allow="autoplay" allowfullscreen="" class="embed-responsive-item iframeVideo"
+                            style="border-radius: 0.75rem;"></iframe>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
     <!-- HTML -->
     <div class="secao-processo">
         <div class="processo-container">
-
             <!-- Imagem à esquerda -->
             <div class="processo-imagem">
-                <img src="assets/img/bg/gengibre01.png" alt="Processo de Seleção e Embalagem">
+                <img alt="Processo de Seleção e Embalagem" src="../assets/img/bg/gengibre01.png" />
             </div>
-
             <!-- Texto à direita -->
-            <div style=" background-color: #F5E46C;color: #2b7d49;" class="processo-texto">
-                <div class=" p-5 texto-conteudo">
+            <div class="processo-texto" style=" background-color: #F5E46C;color: #2b7d49;">
+                <div class="p-5 texto-conteudo">
                     <h2>
-                        Premium ginger,<br> fresh from the farm.
+                        Gengibre premium,<br /> direto do campo.
                     </h2>
-                    <p>
-                        Discover the authentic taste of our carefully selected roots.
-                    </p>
+                    <p>Descubra o sabor autêntico das nossas raízes cuidadosamente selecionadas.</p>
                 </div>
             </div>
-
         </div>
     </div>
-
-
     <div class="containerImagesProducts">
         <div class="texto-centralizado">
-            <h2>Explore our full range of fresh root crops.</h2>
+            <h2>Explore nossa linha completa de raízes frescas.</h2>
         </div>
         <a href="services.html#slideProducts">
             <div class="galeria-container">
-                <div class="imagem" id="img1"><img src="assets/img/bg/bg2.jpg" alt="Descrição 1"></div>
-                <div class="imagem" id="img2"><img src="assets/img/bg/bg3.jpg" alt="Descrição 2"></div>
-                <div class="imagem" id="img3"><img src="assets/img/bg/bg4.jpg" alt="Descrição 3"></div>
-                <div class="imagem" id="img4"><img src="assets/img/bg/limes.jpg" alt="Descrição 4"></div>
+                <div class="imagem" id="img1"><img alt="Descrição 1" src="../assets/img/bg/bg2.jpg" /></div>
+                <div class="imagem" id="img2"><img alt="Descrição 2" src="../assets/img/bg/bg3.jpg" /></div>
+                <div class="imagem" id="img3"><img alt="Descrição 3" src="../assets/img/bg/bg4.jpg" /></div>
+                <div class="imagem" id="img4"><img alt="Descrição 4" src="../assets/img/bg/limes.jpg" /></div>
             </div>
         </a>
-        <a style="text-decoration: none;" href="services.html#productsCards">
-            <div id="img5" class="texto-centralizado imagem   ">
-                <p>Explore our full range of fresh root crops. --></p>
+        <a href="services.html#productsCards" style="text-decoration: none;">
+            <div class="texto-centralizado imagem" id="img5">
+                <p>Conheça toda a nossa variedade de raízes frescas. --&gt;</p>
             </div>
         </a>
     </div>
-
-
     <!-- HTML -->
-    <a style="text-decoration: none; " href="about.html#ourhistory">
+    <a href="about.html#ourhistory" style="text-decoration: none; ">
         <div class="secao-processo">
             <div class="processo-container">
                 <!-- Texto à esquerda -->
                 <div class="processo-texto">
-                    <div class=" p-5 texto-conteudo">
-                        <h2>
-                            We grow with tradition and innovation.
-                        </h2>
+                    <div class="p-5 texto-conteudo">
+                        <h2>Crescemos com tradição e inovação.</h2>
                         <p class="position-relative">
-                            Learn how our journey shapes the quality we deliver. -->
+                            Entenda como nosso caminho fortalece o padrão de qualidade que oferecemos. --&gt;
 
                         </p>
                     </div>
                 </div>
                 <!-- Imagem à esquerda -->
                 <div class="processo-imagem">
-                    <img src="assets/img/bg/bg04.jpg" alt="Processo de Seleção e Embalagem">
-
-
+                    <img alt="Processo de Seleção e Embalagem" src="../assets/img/bg/bg04.jpg" />
                 </div>
-
             </div>
         </div>
     </a>
-
     <!-- HTML -->
-    <a style="text-decoration: none;" href="exportacao.html">
+    <a href="exportacao.html" style="text-decoration: none;">
         <div class="secao-processo">
             <div class="processo-container">
                 <!-- Imagem à esquerda -->
                 <div class="processo-imagem">
-                    <img src="assets/img/bg/export.png" alt="Processo de Seleção e Embalagem">
+                    <img alt="Processo de Seleção e Embalagem" src="../assets/img/bg/export.png" />
                 </div>
                 <!-- Texto à direita -->
-                <div style="background-color: #56BC4F;" class="processo-texto ">
-                    <div class=" p-5 texto-conteudo">
-                        <h2>
-                            We’re in Brazil, the US and Europe.
-                        </h2>
+                <div class="processo-texto" style="background-color: #56BC4F;">
+                    <div class="p-5 texto-conteudo">
+                        <h2>Estamos no Brasil, nos EUA e na Europa.</h2>
                         <p class="position-relative">
-                            Seamless shipping and trusted partners around the world. -->
+                            Logística eficiente e parceiros confiáveis em todo o mundo. --&gt;
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </a>
-
-
-
-
-
-
-
-
-
     <!-- Contact us -->
-    <div style="background-color: #2b7d49; color: white;" id="contact-us " class="overflow-hidden ">
-        <div class="container ">
-            <div class="row gy-5 gx-sm-5 ">
-                <div class="col-12  pt-4 ">
-                    <div class="mx-auto max-w-2xl ">
-                        <h2 class="m-0  text-base leading-7 fw-semibold ">
-                            Get in touch
-                        </h2>
-                        <p class="m-0 mt-2 text-3xl tracking-tight fw-bold ">
-                            Have any questions or need assistance? Contact us today!
-                        </p>
+    <div class="overflow-hidden" id="contact-us " style="background-color: #2b7d49; color: white;">
+        <div class="container">
+            <div class="row gy-5 gx-sm-5">
+                <div class="col-12 pt-4">
+                    <div class="mx-auto max-w-2xl">
+                        <h2 class="m-0 text-base leading-7 fw-semibold">Entre em contato</h2>
+                        <p class="m-0 mt-2 text-3xl tracking-tight fw-bold">Tem dúvidas ou precisa de ajuda? Fale
+                            conosco agora mesmo!</p>
                     </div>
-
-                    <div class="mx-auto max-w-2xl mt-6 ">
-                        <form class="row g-4 needs-validation " id="myForm " novalidate>
-                            <div class="col-md-6 ">
-                                <label for="nameForm " class="form-label text-sm ">
-                                    Full name
-                                    <span class="text-danger-emphasis ">*</span>
+                    <div class="mx-auto max-w-2xl mt-6">
+                        <form class="row g-4 needs-validation" id="myForm " novalidate="">
+                            <div class="col-md-6">
+                                <label class="form-label text-sm" for="nameForm ">
+                                    Nome Completo
+                                    <span class="text-danger-emphasis">*</span>
                                 </label>
-                                <input type="text " class="form-control form-control-sm " name="nameForm " id="nameForm " required>
-                                <div class="invalid-feedback text-xs ">
-                                    Please enter your full name.
-                                </div>
+                                <input class="form-control form-control-sm" id="nameForm " name="nameForm " required=""
+                                    type="text " />
+                                <div class="invalid-feedback text-xs">Por favor, preencha seu nome completo.</div>
                             </div>
-
-                            <div class="col-md-6 ">
-                                <label for="emailForm " class="form-label text-sm ">
-                                    Email address
-                                    <span class="text-danger-emphasis ">*</span>
+                            <div class="col-md-6">
+                                <label class="form-label text-sm" for="emailForm ">
+                                   Email
+                                    <span class="text-danger-emphasis">*</span>
                                 </label>
-                                <input type="email " class="form-control form-control-sm " name="emailForm " id="emailForm " required>
-                                <div class="invalid-feedback text-xs ">
-                                    Please enter your email address.
-                                </div>
+                                <input class="form-control form-control-sm" id="emailForm " name="emailForm "
+                                    required="" type="email " />
+                                <div class="invalid-feedback text-xs">Por favor, preencha seu e-mail.</div>
                             </div>
-
-                            <div class="col-md-6 ">
-                                <label for="phoneForm " class="form-label text-sm ">
-                                    Phone number
-                                    <span class="text-danger-emphasis ">*</span>
+                            <div class="col-md-6">
+                                <label class="form-label text-sm" for="phoneForm ">
+                                    Telefone
+                                    <span class="text-danger-emphasis">*</span>
                                 </label>
-                                <input type="text " class="form-control form-control-sm " name="phoneForm " id="phoneForm " required>
-                                <div class="invalid-feedback text-xs ">
-                                    Please enter your phone number.
-                                </div>
+                                <input class="form-control form-control-sm" id="phoneForm " name="phoneForm "
+                                    required="" type="text " />
+                                <div class="invalid-feedback text-xs">Por favor, preencha seu telefone.</div>
                             </div>
-
-                            <div class="col-md-6 ">
-                                <label for="subjectForm " class="form-label text-sm ">
-                                    Subject
-                                    <span class="text-danger-emphasis ">*</span>
+                            <div class="col-md-6">
+                                <label class="form-label text-sm" for="subjectForm ">
+                                    Assunto
+                                    <span class="text-danger-emphasis">*</span>
                                 </label>
-                                <input type="text " class="form-control form-control-sm " name="subjectForm " id="subjectForm " required>
-                                <div class="invalid-feedback text-xs ">
-                                    Please enter a subject for your message.
-                                </div>
+                                <input class="form-control form-control-sm" id="subjectForm " name="subjectForm "
+                                    required="" type="text " />
+                                <div class="invalid-feedback text-xs">Por favor, informe o assunto da mensagem.</div>
                             </div>
-
-                            <div class="mb-3 ">
-                                <label for="messageForm " class="form-label text-sm ">
-                                    Your message
-                                    <span class="text-danger-emphasis ">*</span>
+                            <div class="mb-3">
+                                <label class="form-label text-sm" for="messageForm ">
+                                    Sua  Mensagem
+                                    <span class="text-danger-emphasis">*</span>
                                 </label>
-                                <textarea class="form-control form-control-sm " name="messageForm " id="messageForm " rows="3 " required></textarea>
-                                <div class="invalid-feedback text-xs ">
-                                    Please enter a message.
+                                <textarea class="form-control form-control-sm" id="messageForm " name="messageForm "
+                                    required="" rows="3 "></textarea>
+                                <div class="invalid-feedback text-xs">Por favor, digite sua mensagem.</div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" id="gridCheck " required="" type="checkbox " />
+                                    <label class="form-check-label text-sm" for="gridCheck ">
+                                        Eu aceito  os  termos  de política e privacidade.
+                                        <span class="text-danger-emphasis">*</span>
+                                    </label>  <br>
+                                    <a style="font-size: 0.7em;color: white;" href="../assets/pages/politicaPrivacidade.html"  target="_blank">Política de privacidade</a>
+                                    <div class="invalid-feedback text-xs">Você precisa concordar com os termos e a
+                                        política de privacidade.</div>
                                 </div>
                             </div>
-
-                            <div class="col-12 ">
-                                <div class="form-check ">
-                                    <input class="form-check-input " type="checkbox " id="gridCheck " required>
-                                    <label class="form-check-label text-sm " for="gridCheck ">
-                                        I agree to the terms &amp; conditions and privacy policy
-                                        <span class="text-danger-emphasis ">*</span>
-                                    </label>
-                                    <div class="invalid-feedback text-xs ">
-                                        Please agree to the terms &amp; conditions and privacy policy.
-                                    </div>
-                                </div>
+                            <div class="col-12 text-center pt-3">
+                                <button class="btn btn-lg btn-primary text-white text-sm fw-semibold" id="sendMessage "
+                                    type="submit ">Enviar mensagem</button>
                             </div>
-
-                            <div class="col-12 text-center pt-3 ">
-                                <button type="submit " class="btn btn-lg btn-primary text-white text-sm fw-semibold " id="sendMessage ">
-                                    Send message
-                                </button>
-                            </div>
-
                             <!-- Alert message  -->
-                            <div class="col-12 " id="yourMessageIsSent "></div>
+                            <div class="col-12" id="yourMessageIsSent "></div>
                         </form>
                     </div>
                 </div>
-
-                <div class="d-none d-xl-block col-12 col-xl-7 " data-aos-delay="0 " data-aos="fade " data-aos-duration="3000 ">
-                    <div class="h-100 position-relative ms-xxl-5 ">
-                        <div class="position-absolute top-0 end-0 bottom-0 start-0 z-n1 rounded-5 ">
-                            <img src="./assets/logo/3x/LOGO3D.png " class="w-100 h-100 rounded-3 object-fit-cover " loading="lazy " alt="Image description ">
+                <div class="d-none d-xl-block col-12 col-xl-7" data-aos="fade " data-aos-delay="0 "
+                    data-aos-duration="3000 ">
+                    <div class="h-100 position-relative ms-xxl-5">
+                        <div class="position-absolute top-0 end-0 bottom-0 start-0 z-n1 rounded-5">
+                            <img alt="Image description " class="w-100 h-100 rounded-3 object-fit-cover" loading="lazy "
+                                src="./assets/logo/3x/LOGO3D.png " />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-    <footer class="overflow-hidden py-6 py-sm-7   ">
-        <div class="container ">
-            <div class="row gy-5 ">
-                <div class="col-12 col-xl-6 ">
-                    <div class="pb-3 max-w-lg position-relative ">
-                        <form method="post " target="_blank " novalidate class="mc-embedded-subscribe-form ">
-
-                            <h2 class="text-body-emphasis leading-6 text-4xl tracking-tight fw-bold ">
-                                Subscribe to our newsletter.
-                            </h2>
-                            <p class="m-0 mt-3 text-body-secondary text-lg leading-8 ">
-                                Experience the ease of code deployment with just a click. Simplify your development tasks, and increase productivity.
-                            </p>
-
-                            <div class="mt-4 mb-2 d-flex flex-column flex-sm-row w-100 gap-2 js-form-inputs ">
-                                <label for="emailSubscribe1 " class="visually-hidden ">Email address</label>
-                                <input type="email " name="EMAIL " id="emailSubscribe1 " value=" " class="form-control leading-6 text-sm max-w-xl " placeholder="Enter your email ">
-                                <button type="submit " name="subscribe " class="btn btn-primary text-white fw-semibold text-sm ">Subscribe</button>
-                            </div>
-
-                            <!-- This div is related to Mailchimp integration and handled by a function in our scripts.js file, so no need to worry about it. -->
-                            <div style="position: absolute; left: -5000px; " aria-hidden="true ">
-                                <input type="text " class="js-validate-robot " name="b_a4752870f583bb49a02427b3c_143fa46c21 " tabindex="-1 " value=" ">
-                            </div>
-
-                            <!-- response -->
-                            <div class="js-subscribe-response "></div>
-
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-6 ">
-                    <div class="row row-cols-1 row-cols-sm-2 gx-3 gy-5 ">
-                        <div class="d-flex flex-column align-items-start ">
-                            <div class="p-2 bg-body-tertiary rounded-3 border ">
-                                <svg class="text-body-emphasis " width="24 " height="24 " fill="none " viewBox="0 0 24 24 " stroke-width="1.5 " stroke="currentColor " aria-hidden="true ">
-	                                <path stroke-linecap="round " stroke-linejoin="round " d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25
-                                    2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5m-9-6h.008v.008H12v-.008zM12 15h.008v.008H12V15zm0 2.25h.008v.008H12v-.008zM9.75 15h.008v.008H9.75V15zm0 2.25h.008v.008H9.75v-.008zM7.5 15h.008v.008H7.5V15zm0 2.25h.008v.008H7.5v-.008zm6.75-4.5h.008v.008h-.008v-.008zm0
-                                    2.25h.008v.008h-.008V15zm0 2.25h.008v.008h-.008v-.008zm2.25-4.5h.008v.008H16.5v-.008zm0 2.25h.008v.008H16.5V15z " />
-	                            </svg>
-                            </div>
-                            <div class="m-0 mt-3 text-body-emphasis fw-semibold ">
-                                Weekly articles
-                            </div>
-                            <div class="m-0 mt-2 text-body-tertiary leading-7 ">
-                                Accelerate your deployment process effortlessly. Seamlessly manage your code deployment.
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-column align-items-start ">
-                            <div class="p-2 bg-body-tertiary rounded-3 border ">
-                                <svg class="text-body-emphasis " width="24 " height="24 " fill="none " viewBox="0 0 24 24 " stroke-width="1.5 " stroke="currentColor " aria-hidden="true ">
-	                                <path stroke-linecap="round " stroke-linejoin="round " d="M10.05 4.575a1.575 1.575 0 10-3.15 0v3m3.15-3v-1.5a1.575 1.575 0 013.15 0v1.5m-3.15 0l.075 5.925m3.075.75V4.575m0 0a1.575 1.575 0 013.15 0V15M6.9 7.575a1.575
-                                    1.575 0 10-3.15 0v8.175a6.75 6.75 0 006.75 6.75h2.018a5.25 5.25 0 003.712-1.538l1.732-1.732a5.25 5.25 0 001.538-3.712l.003-2.024a.668.668 0 01.198-.471 1.575 1.575 0 10-2.228-2.228 3.818 3.818 0 00-1.12 2.687M6.9 7.575V12m6.27
-                                    4.318A4.49 4.49 0 0116.35 15m.002 0h-.002 " />
-	                            </svg>
-                            </div>
-                            <div class="m-0 mt-3 text-body-emphasis fw-semibold ">
-                                No spam
-                            </div>
-                            <div class="m-0 mt-2 text-body-tertiary leading-7 ">
-                                Accelerate your deployment process effortlessly. Seamlessly manage your code deployment.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="container ">
-            <hr class="my-6 text-body-emphasis opacity-10 ">
-
-            <div class="d-flex flex-column flex-xl-row gap-5 justify-content-between align-items-xl-center ">
-                <div class="order-first order-xl-last ">
-                    <ul class="nav row gy-4 gx-sm-4 row-cols-2 row-cols-sm-auto ">
-                        <li class="nav-item ">
-                            <a href="./about.html " class="p-0 text-body-secondary nav-link leading-6 text-sm "> About </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="./services.html " class="p-0 text-body-secondary nav-link leading-6 text-sm "> Products </a>
-                        </li>
-                        <!-- <li class="nav-item ">
-	                        <a href="./blog.html " class="p-0 text-body-secondary nav-link leading-6 text-sm "> Blog </a>
-	                    </li> -->
-                        <li class="nav-item ">
-                            <a href="./contact.html " class="p-0 text-body-secondary nav-link leading-6 text-sm "> Contact us </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class=" ">
-                    <a href="./index.html " class="link-body-emphasis d-flex align-items-center text-decoration-none ">
-                        <img src="./assets/logo/logo.png " height="24 " alt="logo " loading="lazy ">
-                    </a>
-                </div>
-
-                <div class="order-last order-xl-first ">
-                    <p class="mb-0 text-body-secondary leading-6 text-sm ">
-                        ©
-                        <span class="current-year "></span> <a style="text-decoration: none; " href="https://www.lucasrd.site " target="_blank "><em>Lucas Roncheti Designer && Code</em></a>
-                    </p>
-                </div>
-            </div>
-        </div>
+    <footer class="overflow-hidden py-6 py-sm-7">
+        <!-- js -->
     </footer>
-
-
-
     <!-- Back to top button -->
-    <button type="button " class="btn btn-primary btn-back-to-top rounded-circle justify-content-center align-items-center p-2 text-white ">
-		<svg xmlns="http://www.w3.org/2000/svg " width="20 " height="20 " fill="currentColor " class="bi bi-caret-up-fill " viewBox="0 0 16 16 "> <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0
-                                    0 0-1.506 0z "/> </svg>
-	</button>
-
-
-
+    <button
+        class="btn btn-primary btn-back-to-top rounded-circle justify-content-center align-items-center p-2 text-white"
+        type="button ">
+        <svg class="bi bi-caret-up-fill" fill="currentColor " height="20 " viewbox="0 0 16 16 " width="20 "
+            xmlns="http://www.w3.org/2000/svg ">
+            <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0
+                                    0 0-1.506 0z "></path>
+        </svg>
+    </button>
     <!-- Bootstrap JavaScript: Bundle with Popper -->
-    <script src="./assets/libraries/bootstrap/js/bootstrap.bundle.min.js "></script>
-    <script src="./assets/libraries/glide/glide.min.js "></script>
-    <script src="./assets/libraries/aos/aos.js "></script>
-    <script src="./assets/js/scripts.js "></script>
-    <script src="./assets/php/contact/script.js "></script>
-    <script src="./assets/js/header-footer-list.js"></script>
-    <script src="assets/js/selectLanguage.js"></script>
-
-
-
-
+    <script src="../assets/libraries/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="../assets/libraries/glide/glide.min.js "></script>
+    <script src="../assets/libraries/aos/aos.js "></script>
+    <script src="../assets/js/scripts.js "></script>
+    <script src="../assets/php/contact/script.js "></script>
+    <script src="../assets/js/header-footer-list.js"></script>
+    <script src="../assets/js/selectLanguage.js"></script>
 </body>
 
 </html>
-
-
-
 <script>
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {

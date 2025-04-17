@@ -1,6 +1,8 @@
 let lenguage = navigator.language || navigator.userLanguage;
 let lang = lenguage.split("-")[0];
 
+const langsSuportados = ["pt", "es"];
+lang = langsSuportados.includes(lang) ? lang : "en";
 let idiomaSelecionado = localStorage.getItem("idioma");
 
 console.log("idiomaSelecionado", idiomaSelecionado);
@@ -23,9 +25,9 @@ function alterarIdiomaAoCarregarPagina(idiomaSelecionado) {
 function selecionarIdioma(idioma) {
   localStorage.setItem("idioma", idioma);
   const langPaths = {
-    pt: "./pt/index.html",
-    es: "./es/index.html",
-    en: "./index.html",
+    pt: "/pt/index.html",
+    es: "/es/index.html",
+    en: "/index.html",
   };
   const idiomas = ["pt", "es", "en"];
 
@@ -33,8 +35,10 @@ function selecionarIdioma(idioma) {
   localStorage.setItem("outrosIdiomas", outrosIdiomas);
 
   alterandoClasses(idioma, outrosIdiomas);
-    window.location.href = langPaths[idioma];
+  window.location.href = langPaths[idioma];
 }
+
+
 
 
 

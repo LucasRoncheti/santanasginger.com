@@ -1,8 +1,23 @@
 const list = document.getElementById('menu-list');
 const footer = document.querySelector('footer')
 
+const langSelected = localStorage.getItem("idioma") ;
+
 //header 
 const menuList = () => {
+
+
+  let brasilFlag = "./assets/flags/pt-br.svg"
+  let euaFlag = "./assets/flags/eng.svg"
+  let esFlag = "./assets/flags/spn.svg"
+
+
+  if (langSelected === "pt" || langSelected === "es") {
+     brasilFlag = "../assets/flags/pt-br.svg"
+     euaFlag = "../assets/flags/eng.svg"
+     esFlag = "../assets/flags/spn.svg"
+
+  }
     /* html */
     list.innerHTML = `
     <li class="nav-item">
@@ -51,13 +66,13 @@ const menuList = () => {
 
     <div class="nav-item dropdown d-flex align-items-center gap-3">
       <div   onclick="selecionarIdioma('pt')" id="pt" class="w-auto d-flex align-items-center gap-3  cursor-pointer flagUnActive ">
-        <img title="Alterar para Português" style="cursor:pointer;"  src="./assets/flags/pt-br.svg" height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
+        <img title="Alterar para Português" style="cursor:pointer;"  src=${brasilFlag} height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
       </div>
       <div  onclick="selecionarIdioma('en')" id="en" class="w-auto d-flex align-items-center gap-3  cursor-pointer flagActive ">
-        <img  title="Change to English"  style="cursor:pointer;"  src="./assets/flags/eng.svg" height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
+        <img  title="Change to English"  style="cursor:pointer;"  src=${euaFlag} height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
       </div>
       <div  onclick="selecionarIdioma('es')" id="es" class="w-auto d-flex align-items-center gap-3  cursor-pointer  flagUnActive ">
-      <img title="Cambiar a español" style="cursor:pointer;"     src="./assets/flags/spn.svg" height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
+      <img title="Cambiar a español" style="cursor:pointer;"     src=${esFlag} height="20" alt="Santanas Ginger Logo" loading="lazy" class="d-block mx-auto">
       </div>
     </div>
 
@@ -76,6 +91,18 @@ const menuList = () => {
 // footer 
 
 const footerList = () => {
+
+    let brasilFlag = './assets/img/bg/brasilFlag.jpg'
+    let argentinaFlag = './assets/img/bg/argentinaFlag.jpg'
+    let worldFlag = './assets/img/bg/world.jpg'
+    let logo = "./assets/img/bg/logo.png"
+
+  if(langSelected === 'pt' || langSelected === 'es') {
+     brasilFlag = '../assets/img/bg/brasilFlag.jpg'
+     argentinaFlag = '../assets/img/bg/argentinaFlag.jpg'
+     worldFlag = '../assets/img/bg/world.jpg'
+      logo = "../assets/img/bg/logo.png"
+  }
 
     /*html*/
     footer.innerHTML = `
@@ -143,7 +170,7 @@ const footerList = () => {
       </div>
       <div>
         <h6 class="fw-bold text-body-emphasis">
-          <img src="./assets/img/bg/brasilFlag.jpg" width="20" alt="Brazil Flag" class="me-2">BRAZIL
+          <img src=${brasilFlag} width="20" alt="Brazil Flag" class="me-2">BRAZIL
         </h6>
         <p class="text-body-secondary">
           Hiago Santana<br>
@@ -153,7 +180,7 @@ const footerList = () => {
       </div>
       <div>
         <h6 class="fw-bold text-body-emphasis">
-          <img src="./assets/img/bg/argentinaFlag.jpg" width="20" alt="Argentina Flag" class="me-2">ARGENTINA
+          <img src=${argentinaFlag} width="20" alt="Argentina" class="me-2">ARGENTINA
         </h6>
         <p class="text-body-secondary">
           Lays Santana<br>
@@ -163,7 +190,7 @@ const footerList = () => {
       </div>
       <div>
         <h6 class="fw-bold text-body-emphasis">
-          <img src="./assets/img/bg/world.jpg" width="20" alt="World Icon" class="me-2">INTERNATIONAL
+          <img src=${worldFlag} width="20" alt="World Icon" class="me-2">INTERNATIONAL
         </h6>
         <p class="text-body-secondary">
           Patrick Santana<br>
@@ -198,13 +225,13 @@ const footerList = () => {
       </div>
       <div>
         <a href="./index.html" class="link-body-emphasis d-flex align-items-center text-decoration-none">
-          <img src="./assets/img/bg/logo.png" height="80" alt="Santanas Ginger Logo" loading="lazy">
+          <img src=${logo} height="80" alt="Santanas Ginger Logo" loading="lazy">
         </a>
       </div>
       <div class="order-last order-xl-first">
         <p class="mb-0 text-body-secondary leading-6 text-sm">
           © 2025 <a href="https://www.lucasrd.site" target="_blank" class="text-decoration-none">
-            <em>Lucas Roncheti Designer && Code</em>
+            <em>Lucas Roncheti CodeDesigner </em>
           </a>
         </p>
       </div>
