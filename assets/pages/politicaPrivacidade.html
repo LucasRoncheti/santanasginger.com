@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../logo/favicon.ico" type="image/x-icon">
+
+  <title>Política de Privacidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      color: #2b7d49;
+    }
+    nav {
+      margin-bottom: 20px;
+    }
+    nav button {
+      margin-right: 10px;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #2b7d49;
+      color: #fff;
+      cursor: pointer;
+    }
+    .lang-content {
+      display: none;
+    }
+    .lang-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <button onclick="showLang('pt')">Português</button>
+      <button onclick="showLang('en')">English</button>
+      <button onclick="showLang('es')">Español</button>
+    </nav>
+
+    <div id="pt" class="lang-content active">
+        <h1>Política de Privacidade</h1>
+        <p>A <strong>Santanas Ginger</strong> valoriza a sua privacidade. Esta política descreve como coletamos, usamos e protegemos as informações fornecidas através do nosso formulário de contato.</p>
+      
+        <h2>1. Coleta de Informações</h2>
+        <p>Coletamos:</p>
+        <ul>
+          <li>Nome completo</li>
+          <li>E-mail</li>
+          <li>Telefone</li>
+          <li>Assunto e mensagem</li>
+          <li>Confirmação de aceite da política de privacidade</li>
+        </ul>
+      
+        <h2>2. Uso das Informações</h2>
+        <p>Utilizamos os dados exclusivamente para contato e suporte. Não enviamos marketing sem seu consentimento.</p>
+      
+        <h2>3. Armazenamento e Proteção</h2>
+        <p>Seus dados são armazenados com segurança e protegidos contra acessos não autorizados.</p>
+      
+        <h2>4. Compartilhamento</h2>
+        <p>Não compartilhamos suas informações com terceiros, exceto quando exigido por lei.</p>
+      
+        <h2>5. Seus Direitos</h2>
+        <p>Você pode solicitar atualização ou exclusão de seus dados pelo e-mail <a href="mailto:sales@santanasginger.com">sales@santanasginger.com</a>.</p>
+      
+        <h2>6. Consentimento</h2>
+        <p>Ao marcar a caixa no formulário, você concorda com esta política.</p>
+      </div>
+      
+
+      <div id="en" class="lang-content">
+        <h1>Privacy Policy</h1>
+        <p><strong>Santanas Ginger</strong> values your privacy. This policy explains how we collect, use, and protect the information provided through our contact form.</p>
+      
+        <h2>1. Information Collection</h2>
+        <p>We collect:</p>
+        <ul>
+          <li>Full name</li>
+          <li>Email address</li>
+          <li>Phone number</li>
+          <li>Subject and message</li>
+          <li>Consent to this privacy policy</li>
+        </ul>
+      
+        <h2>2. Use of Information</h2>
+        <p>We use the data solely to contact you and provide support. We do not send marketing without your explicit consent.</p>
+      
+        <h2>3. Storage and Protection</h2>
+        <p>Your data is securely stored and protected against unauthorized access.</p>
+      
+        <h2>4. Sharing</h2>
+        <p>We do not share your data with third parties unless required by law.</p>
+      
+        <h2>5. Your Rights</h2>
+        <p>You may request to update or delete your data by emailing <a href="mailto:sales@santanasginger.com">sales@santanasginger.com</a>.</p>
+      
+        <h2>6. Consent</h2>
+        <p>By checking the consent box, you agree to this privacy policy.</p>
+      </div>
+      
+
+      <div id="es" class="lang-content">
+        <h1>Política de Privacidad</h1>
+        <p><strong>Santanas Ginger</strong> valora su privacidad. Esta política explica cómo recopilamos, usamos y protegemos la información enviada a través de nuestro formulario de contacto.</p>
+      
+        <h2>1. Recopilación de Información</h2>
+        <p>Recopilamos:</p>
+        <ul>
+          <li>Nombre completo</li>
+          <li>Correo electrónico</li>
+          <li>Número de teléfono</li>
+          <li>Asunto y mensaje</li>
+          <li>Confirmación de aceptación de esta política</li>
+        </ul>
+      
+        <h2>2. Uso de la Información</h2>
+        <p>Utilizamos los datos únicamente para contactarlo y brindarle soporte. No enviamos marketing sin su consentimiento explícito.</p>
+      
+        <h2>3. Almacenamiento y Protección</h2>
+        <p>Sus datos se almacenan de forma segura y se protegen contra accesos no autorizados.</p>
+      
+        <h2>4. Compartición</h2>
+        <p>No compartimos su información con terceros, excepto cuando lo exija la ley.</p>
+      
+        <h2>5. Sus Derechos</h2>
+        <p>Puede solicitar la actualización o eliminación de sus datos escribiendo a <a href="mailto:sales@santanasginger.com">sales@santanasginger.com</a>.</p>
+      
+        <h2>6. Consentimiento</h2>
+        <p>Al marcar la casilla de consentimiento, usted acepta esta política.</p>
+      </div>
+      
+  </div>
+
+  <script>
+    function showLang(lang) {
+      document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+      document.getElementById(lang).classList.add('active');
+    }
+  </script>
+</body>
+</html>

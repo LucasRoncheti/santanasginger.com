@@ -328,3 +328,21 @@ body {
     background-color: #4caa47;
     color: white;
 }
+
+
+/*Flags  containers*/
+
+.flagActive {
+    border: solid 2px white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.89);
+}
+
+.flagUnActive {
+    opacity: 0.5;
+}
+
+.flagUnActive:hover {
+    opacity: 1;
+    transition: 0.3s;
+}
