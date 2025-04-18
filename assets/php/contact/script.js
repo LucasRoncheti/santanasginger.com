@@ -19,16 +19,16 @@ const alertDangerContact = `
 `;
 
 const alertSuccessContact = `
-	<div class="alert bg-info bg-opacity-10 d-flex p-3 mt-4" role="alert">
-		<svg class="bi flex-shrink-0 me-2 text-success-emphasis" fill="currentColor" width="20" height="20" role="img" viewBox="0 0 16 16" aria-label="success:">
+	<div style="color:white;" class="alert bg-info bg-opacity-10 d-flex p-3 mt-4" role="alert">
+		<svg  class="bi flex-shrink-0 me-2 " fill="currentColor" width="20" height="20" role="img" viewBox="0 0 16 16" aria-label="success:">
 			<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
 		</svg>
 		<div class="ps-1">
-			<h3 style="color:white" class="m-0 fw-semibold text-sm text-success-emphasis">
+			<h3 style="color:white;" class="m-0 fw-semibold ">
 				Thank you! Your message has been successfully sent. 
 			</h3>
 			<div class="mt-2 text-sm">
-				<p  style="color:white" class="m-0 text-success-emphasis">
+				<p  style="color:white;" class="m-0 ">
 					We will contact you soon.
 				</p>
 			</div>
