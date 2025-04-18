@@ -37,16 +37,19 @@ function selecionarIdioma(idioma) {
 }
 
 function alterandoClasses(idiomaSelecionado, outrosIdiomas) {
-  outrosIdiomas.forEach((path) => {
-    document.getElementById(path).classList.add("flagUnActive");
-    document.getElementById(path).classList.remove("flagActive");
+  outrosIdiomas.forEach((OutroIdioma) => {
+    const el = document.getElementById(OutroIdioma)
+    el.classList.add("flagUnActive");
+    el.classList.remove("flagActive");
   });
-  document.getElementById(idiomaSelecionado).classList.add("flagActive");
-  document.getElementById(idiomaSelecionado).classList.remove("flagUnActive");
+
+  const elSelecionado = document.getElementById(idiomaSelecionado);
+  elSelecionado.classList.add("flagActive");
+  elSelecionado.classList.remove("flagUnActive");
 }
 
 function setOutrosIdiomasLoacalStorage(idioma) {
-  let outrosIdiomas = idiomas.filter((path) => path !== idioma);
+  let outrosIdiomas = idiomas.filter((outroIdioma) => outroIdioma !== idioma);
   localStorage.setItem("outrosIdiomas", outrosIdiomas);
 }
 
