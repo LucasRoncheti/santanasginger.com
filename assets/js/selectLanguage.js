@@ -23,7 +23,7 @@ function alterarIdiomaAoCarregarPagina() {
     return;
   }
 
-  alterandoClasses(
+  mostrandoBotaoDoIdiomaSelecionado(
     idiomaSelecionado,
     localStorage.getItem("outrosIdiomas").split(",")
   );
@@ -32,11 +32,11 @@ function alterarIdiomaAoCarregarPagina() {
 function selecionarIdioma(idioma) {
   localStorage.setItem("idioma", idioma);
   setOutrosIdiomasLoacalStorage(idioma);
-  alterandoClasses(idioma, localStorage.getItem("outrosIdiomas").split(","));
+  mostrandoBotaoDoIdiomaSelecionado(idioma, localStorage.getItem("outrosIdiomas").split(","));
   window.location.href = langPaths[idioma];
 }
 
-function alterandoClasses(idiomaSelecionado, outrosIdiomas) {
+function mostrandoBotaoDoIdiomaSelecionado(idiomaSelecionado, outrosIdiomas) {
   outrosIdiomas.forEach((OutroIdioma) => {
     const el = document.getElementById(OutroIdioma)
     el.classList.add("flagUnActive");
