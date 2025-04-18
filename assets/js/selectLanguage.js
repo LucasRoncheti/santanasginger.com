@@ -1,54 +1,53 @@
-let lenguage = navigator.language || navigator.userLanguage;
-let lang = lenguage.split("-")[0];
+const langPaths = {
+  pt: "/pt/index.html",
+  es: "/es/index.html",
+  en: "/index.html",
+  default: "/index.html",
+};
 
+const idiomas = ["pt", "es", "en"];
 const langsSuportados = ["pt", "es"];
+
+let language = navigator.language || navigator.userLanguage;
+let lang = language.split("-")[0];
+
 lang = langsSuportados.includes(lang) ? lang : "en";
-let idiomaSelecionado = localStorage.getItem("idioma");
 
-console.log("idiomaSelecionado", idiomaSelecionado);
+function alterarIdiomaAoCarregarPagina() {
+  let idiomaSelecionado = localStorage.getItem("idioma");
 
-function alterarIdiomaAoCarregarPagina(idiomaSelecionado) {
   if (!idiomaSelecionado) {
-    const langPaths = {
-      pt: "./pt/index.html",
-      es: "./es/index.html",
-      default: "./index.html",
-    };
-
-    window.location.href = langPaths[lang] || langPaths.default;
     localStorage.setItem("idioma", lang);
+    setOutrosIdiomasLoacalStorage(lang);
+    window.location.href = langPaths[lang] || langPaths.default;
+    return;
   }
 
-  alterandoClasses(idiomaSelecionado, localStorage.getItem("outrosIdiomas").split(","));
+  alterandoClasses(
+    idiomaSelecionado,
+    localStorage.getItem("outrosIdiomas").split(",")
+  );
 }
 
 function selecionarIdioma(idioma) {
   localStorage.setItem("idioma", idioma);
-  const langPaths = {
-    pt: "/pt/index.html",
-    es: "/es/index.html",
-    en: "/index.html",
-  };
-  const idiomas = ["pt", "es", "en"];
-
-  let outrosIdiomas = idiomas.filter((path) => path !== idioma);
-  localStorage.setItem("outrosIdiomas", outrosIdiomas);
-
-  alterandoClasses(idioma, outrosIdiomas);
+  setOutrosIdiomasLoacalStorage(idioma);
+  alterandoClasses(idioma, localStorage.getItem("outrosIdiomas").split(","));
   window.location.href = langPaths[idioma];
 }
 
-
-
-
-
-function  alterandoClasses(idiomaSelecionado,outrosIdiomas) {
-    outrosIdiomas.forEach((path) => {
-        document.getElementById(path).classList.add('flagUnActive');
-        document.getElementById(path).classList.remove('flagActive');
-        document.getElementById(idiomaSelecionado).classList.add('flagActive');
-        document.getElementById(idiomaSelecionado).classList.remove('flagUnActive');
-    });
+function alterandoClasses(idiomaSelecionado, outrosIdiomas) {
+  outrosIdiomas.forEach((path) => {
+    document.getElementById(path).classList.add("flagUnActive");
+    document.getElementById(path).classList.remove("flagActive");
+  });
+  document.getElementById(idiomaSelecionado).classList.add("flagActive");
+  document.getElementById(idiomaSelecionado).classList.remove("flagUnActive");
 }
 
-alterarIdiomaAoCarregarPagina(idiomaSelecionado);
+function setOutrosIdiomasLoacalStorage(idioma) {
+  let outrosIdiomas = idiomas.filter((path) => path !== idioma);
+  localStorage.setItem("outrosIdiomas", outrosIdiomas);
+}
+
+alterarIdiomaAoCarregarPagina();
