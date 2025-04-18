@@ -76,7 +76,7 @@
                     <div class="offcanvas-header" style="padding: 2rem 2rem 1.5rem 2rem;">
                         <h5 class="offcanvas-title m-0" id="offcanvasNavbar2Label">
                             <a class="navbar-brand" href="javascript:;">
-                                <img alt="logo" height="32" src="./assets/logo/logo.png" />
+                                <img alt="logo" height="32" src="../assets/logo/logo.png" />
                             </a>
                         </h5>
                         <button aria-label="Close" class="btn-close text-white" data-bs-dismiss="offcanvas"
@@ -210,95 +210,93 @@
         </div>
     </a>
     <!-- Contact us -->
-    <div class="overflow-hidden" id="contact-us " style="background-color: #2b7d49; color: white;">
+    <div class="overflow-hidden" id="contact-us" style="background-color: #2b7d49; color: white;">
         <div class="container">
-            <div class="row gy-5 gx-sm-5">
-                <div class="col-12 pt-4">
-                    <div class="mx-auto max-w-2xl">
-                        <h2 class="m-0 text-base leading-7 fw-semibold">Entre em contato</h2>
-                        <p class="m-0 mt-2 text-3xl tracking-tight fw-bold">Tem dúvidas ou precisa de ajuda? Fale
-                            conosco agora mesmo!</p>
+          <div class="row gy-5 gx-sm-5">
+            <div class="col-12 pt-4">
+              <div class="mx-auto max-w-2xl">
+                <h2 class="m-0 text-base leading-7 fw-semibold">Entre em contato</h2>
+                <p class="m-0 mt-2 text-3xl tracking-tight fw-bold">
+                  Tem dúvidas ou precisa de ajuda? Fale conosco agora mesmo!
+                </p>
+              </div>
+              <div class="mx-auto max-w-2xl mt-6">
+                <form class="row g-4 needs-validation" id="myForm" novalidate>
+                  <div class="col-md-6">
+                    <label class="form-label text-sm" for="nameForm">
+                      Nome Completo
+                      <span class="text-danger-emphasis">*</span>
+                    </label>
+                    <input class="form-control form-control-sm" id="nameForm" name="nameForm" required type="text" />
+                    <div class="invalid-feedback text-xs">Por favor, preencha seu nome completo.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-sm" for="emailForm">
+                      Email
+                      <span class="text-danger-emphasis">*</span>
+                    </label>
+                    <input class="form-control form-control-sm" id="emailForm" name="emailForm" required type="email" />
+                    <div class="invalid-feedback text-xs">Por favor, preencha seu e-mail.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-sm" for="phoneForm">
+                      Telefone
+                      <span class="text-danger-emphasis">*</span>
+                    </label>
+                    <input class="form-control form-control-sm" id="phoneForm" name="phoneForm" required type="text" />
+                    <div class="invalid-feedback text-xs">Por favor, preencha seu telefone.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-sm" for="subjectForm">
+                      Assunto
+                      <span class="text-danger-emphasis">*</span>
+                    </label>
+                    <input class="form-control form-control-sm" id="subjectForm" name="subjectForm" required type="text" />
+                    <div class="invalid-feedback text-xs">Por favor, informe o assunto da mensagem.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label text-sm" for="messageForm">
+                      Sua Mensagem
+                      <span class="text-danger-emphasis">*</span>
+                    </label>
+                    <textarea class="form-control form-control-sm" id="messageForm" name="messageForm" required rows="3"></textarea>
+                    <div class="invalid-feedback text-xs">Por favor, digite sua mensagem.</div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" id="gridCheck" required type="checkbox" />
+                      <label class="form-check-label text-sm" for="gridCheck">
+                        Eu aceito os termos de política e privacidade.
+                        <span class="text-danger-emphasis">*</span>
+                      </label>
+                      <br>
+                      <a style="font-size: 0.7em; color: white;" href="../assets/pages/politicaPrivacidade.html" target="_blank">Política de privacidade</a>
+                      <div class="invalid-feedback text-xs">
+                        Você precisa concordar com os termos e a política de privacidade.
+                      </div>
                     </div>
-                    <div class="mx-auto max-w-2xl mt-6">
-                        <form class="row g-4 needs-validation" id="myForm " novalidate="">
-                            <div class="col-md-6">
-                                <label class="form-label text-sm" for="nameForm ">
-                                    Nome Completo
-                                    <span class="text-danger-emphasis">*</span>
-                                </label>
-                                <input class="form-control form-control-sm" id="nameForm " name="nameForm " required=""
-                                    type="text " />
-                                <div class="invalid-feedback text-xs">Por favor, preencha seu nome completo.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label text-sm" for="emailForm ">
-                                   Email
-                                    <span class="text-danger-emphasis">*</span>
-                                </label>
-                                <input class="form-control form-control-sm" id="emailForm " name="emailForm "
-                                    required="" type="email " />
-                                <div class="invalid-feedback text-xs">Por favor, preencha seu e-mail.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label text-sm" for="phoneForm ">
-                                    Telefone
-                                    <span class="text-danger-emphasis">*</span>
-                                </label>
-                                <input class="form-control form-control-sm" id="phoneForm " name="phoneForm "
-                                    required="" type="text " />
-                                <div class="invalid-feedback text-xs">Por favor, preencha seu telefone.</div>
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label text-sm" for="subjectForm ">
-                                    Assunto
-                                    <span class="text-danger-emphasis">*</span>
-                                </label>
-                                <input class="form-control form-control-sm" id="subjectForm " name="subjectForm "
-                                    required="" type="text " />
-                                <div class="invalid-feedback text-xs">Por favor, informe o assunto da mensagem.</div>
-                            </div>
-                            <div class="mb-3">
-                                <label class="form-label text-sm" for="messageForm ">
-                                    Sua  Mensagem
-                                    <span class="text-danger-emphasis">*</span>
-                                </label>
-                                <textarea class="form-control form-control-sm" id="messageForm " name="messageForm "
-                                    required="" rows="3 "></textarea>
-                                <div class="invalid-feedback text-xs">Por favor, digite sua mensagem.</div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" id="gridCheck " required="" type="checkbox " />
-                                    <label class="form-check-label text-sm" for="gridCheck ">
-                                        Eu aceito  os  termos  de política e privacidade.
-                                        <span class="text-danger-emphasis">*</span>
-                                    </label>  <br>
-                                    <a style="font-size: 0.7em;color: white;" href="../assets/pages/politicaPrivacidade.html"  target="_blank">Política de privacidade</a>
-                                    <div class="invalid-feedback text-xs">Você precisa concordar com os termos e a
-                                        política de privacidade.</div>
-                                </div>
-                            </div>
-                            <div class="col-12 text-center pt-3">
-                                <button class="btn btn-lg btn-primary text-white text-sm fw-semibold" id="sendMessage "
-                                    type="submit ">Enviar mensagem</button>
-                            </div>
-                            <!-- Alert message  -->
-                            <div class="col-12" id="yourMessageIsSent "></div>
-                        </form>
-                    </div>
-                </div>
-                <div class="d-none d-xl-block col-12 col-xl-7" data-aos="fade " data-aos-delay="0 "
-                    data-aos-duration="3000 ">
-                    <div class="h-100 position-relative ms-xxl-5">
-                        <div class="position-absolute top-0 end-0 bottom-0 start-0 z-n1 rounded-5">
-                            <img alt="Image description " class="w-100 h-100 rounded-3 object-fit-cover" loading="lazy "
-                                src="./assets/logo/3x/LOGO3D.png " />
-                        </div>
-                    </div>
-                </div>
+                  </div>
+                  <div class="col-12 text-center pt-3">
+                    <button class="btn btn-lg btn-primary text-white text-sm fw-semibold" id="sendMessage" type="submit">Enviar mensagem</button>
+                  </div>
+                  <!-- Alert message -->
+                  <div class="col-12" id="yourMessageIsSent"></div>
+                </form>
+              </div>
             </div>
+            <div class="d-none d-xl-block col-12 col-xl-7" data-aos="fade" data-aos-delay="0" data-aos-duration="3000">
+              <div class="h-100 position-relative ms-xxl-5">
+                <div class="position-absolute top-0 end-0 bottom-0 start-0 z-n1 rounded-5">
+                  <img alt="Image description" class="w-100 h-100 rounded-3 object-fit-cover" loading="lazy" src="./assets/logo/3x/LOGO3D.png" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
+      
+      
+
     <footer class="overflow-hidden py-6 py-sm-7">
         <!-- js -->
     </footer>
