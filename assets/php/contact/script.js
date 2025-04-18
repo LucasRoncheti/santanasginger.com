@@ -24,11 +24,11 @@ const alertSuccessContact = `
 			<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
 		</svg>
 		<div class="ps-1">
-			<h3 class="m-0 fw-semibold text-sm text-success-emphasis">
+			<h3 style="color:white" class="m-0 fw-semibold text-sm text-success-emphasis">
 				Thank you! Your message has been successfully sent. 
 			</h3>
 			<div class="mt-2 text-sm">
-				<p class="m-0 text-success-emphasis">
+				<p  style="color:white" class="m-0 text-success-emphasis">
 					We will contact you soon.
 				</p>
 			</div>
@@ -56,6 +56,7 @@ const alertSecondaryContact = `
 
 
 
+
 var myForm = document.getElementById('myForm');
 
 if (myForm !== null) {
@@ -76,6 +77,9 @@ myForm.addEventListener('submit', function(event) {
 
     } else {
 
+		const idioma  = localStorage.getItem('idioma');
+
+		let  urlLanguages =  idioma != 'en' ? "../assets/php/contact/mailer.php" : "./assets/php/contact/mailer.php";
 
 	    var data = new FormData(myForm);
 	 	document.getElementById("sendMessage").disabled = true;
@@ -85,7 +89,7 @@ myForm.addEventListener('submit', function(event) {
 		document.getElementById("yourMessageIsSent").innerHTML = alertSecondaryContact;
 
 		// (B) FETCH
-		fetch("./assets/php/contact/mailer.php", {
+		fetch(urlLanguages, {
 		    method: "post",
 		    body: data
 		})
