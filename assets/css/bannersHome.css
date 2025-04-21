@@ -160,6 +160,13 @@
         font-size: 1.7em;
         font-weight: 600;
     }
+
+    @media screen and (max-width: 768px) {
+        .texto-centralizado  {
+            text-align: left;
+        }
+        
+    }
     
     @keyframes aparecer {
         to {

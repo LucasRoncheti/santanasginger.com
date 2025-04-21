@@ -198,7 +198,7 @@ const footerList = () => {
   const lang = t[langSelected] || t.en;
 
   footer.innerHTML = `
-    <div class="container">
+    <div class="container  text-align-center-mobile">
       <div class="row gy-5">
         <div class="col-12 col-xl-6">
           <div class="pb-3 max-w-lg position-relative">
@@ -215,17 +215,17 @@ const footerList = () => {
         </div>
 
         <div class="col-12 col-xl-6">
-          <div class="row row-cols-1 row-cols-sm-2 gx-3 gy-5">
-            <div class="d-flex flex-column align-items-start">
-              <div class="p-2 rounded-3 border bg-white">
+          <div class="row row-cols-1 row-cols-sm-2 gx-3 gy-5 ">
+            <div class="d-flex flex-column  textoenderecoFooter">
+              <div style="max-width:35px;" class="p-2 rounded-3 border bg-white ">
                 <i class="bi bi-geo-alt text-body-emphasis"></i>
               </div>
               <div class="m-0 mt-3 text-body-emphasis fw-semibold">${lang.addressTitle}</div>
               <div class="m-0 mt-2 text-body-tertiary leading-7">${lang.address}</div>
             </div>
 
-            <div class="d-flex flex-column align-items-start">
-              <div class="p-2 rounded-3 border bg-white">
+            <div   class="d-flex flex-column textoenderecoFooter">
+              <div style="max-width:35px;" class="p-2 rounded-3 border bg-white">
                 <i class="bi bi-telephone text-body-emphasis"></i>
               </div>
               <div class="m-0 mt-3 text-body-emphasis fw-semibold">${lang.contactTitle}</div>
@@ -240,7 +240,7 @@ const footerList = () => {
       </div>
     </div>
 
-    <div class="container mt-5">
+    <div class="container mt-5  text-align-center-mobile">
       <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-4">
         <div>
           <h6 class="fw-bold text-body-emphasis"> <i class="bi bi-boxes text-body-emphasis"></i> ${lang.productsTitle}</h6>
@@ -251,7 +251,7 @@ const footerList = () => {
           </ul>
         </div>
         <div>
-          <h6 class="fw-bold text-body-emphasis">
+          <h6 class="fw-bold text-body-emphasis ">
             <img src=${brasilFlag} width="20" alt="Brazil Flag" class="me-2">${lang.regions[0]}
           </h6>
           <p class="text-body-secondary">
@@ -283,7 +283,7 @@ const footerList = () => {
       </div>
     </div>
 
-    <div class="container">
+    <div class="container text-align-center-mobile">
       <hr class="my-6 text-body-emphasis opacity-10">
       <div class="d-flex flex-column flex-xl-row gap-5 justify-content-between align-items-xl-center">
         <div class="order-first order-xl-last">
@@ -295,7 +295,7 @@ const footerList = () => {
           </ul>
         </div>
         <div>
-          <a href="./index.html" class="link-body-emphasis d-flex align-items-center text-decoration-none">
+          <a  href="./index.html" class="link-body-emphasis d-flex align-items-center text-decoration-none imagemLogoFooter ">
             <img src=${logo} height="80" alt="Santanas Ginger Logo" loading="lazy">
           </a>
         </div>

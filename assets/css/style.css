@@ -10,6 +10,15 @@ body {
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
+@media screen and (max-width: 768px) {
+   .text-align-center-mobile{
+         text-align: center;
+     }
+
+
+   
+}
+
 
 /*  
   ------------------------------------------- 
@@ -346,3 +355,20 @@ body {
     opacity: 1;
     transition: 0.3s;
 }
+
+
+/*Imagem logo footer*/
+
+@media screen and (max-width: 768px) {
+    .imagemLogoFooter {
+        justify-content: center;
+    }
+    .textoenderecoFooter{
+
+       align-items: center;
+
+    }
+}
+
+
+

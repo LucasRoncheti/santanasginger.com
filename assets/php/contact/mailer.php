@@ -10,7 +10,7 @@ $messageForm = $_POST['messageForm'];
 
 $mailheader = "From:".$nameForm."<".$emailForm.">\r\n";
 $mailheader .= "MIME-Version: 1.0\r\n";
-$mailheader .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$mailheader .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 $htmlContent = "<strong>Full Name: </strong> ".$nameForm."<br><br>";
 $htmlContent .= "<strong>Email Address: </strong> ".$emailForm."<br><br>";
@@ -19,7 +19,7 @@ $htmlContent .= "<strong>Subject: </strong> ".$subjectForm."<br><br>";
 $htmlContent .= "<strong>Message: </strong> <br>".nl2br($messageForm)."<br><br><br><br><br><br>";
 
 $htmlContent .= "-------------------------------------------<br>";
-$htmlContent .= "Note: this email is sent from your website!";
+$htmlContent .= "Esse email  foi enviado pelo seu site!";
 
 mail($recipient, $subjectForm, $htmlContent, $mailheader) or die("Error!");
 
