@@ -37,6 +37,8 @@
     <link rel="icon" type="image/x-icon" href="../assets/logo/favicon.ico">
     <link rel="manifest" href="../assets/logo/site.webmanifest">
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/silederTimeline.css">
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../assets/libraries/glide/css/glide.core.min.css">
     <link rel="stylesheet" href="../assets/libraries/aos/aos.css">
@@ -169,69 +171,70 @@
         </div>
     </div>
 
-    <!-- Our Process -->
-    <div id="OurProcess" class="overflow-hidden py-6 py-sm-7 py-xl-8">
+      <!-- Our Process -->
+      <div id="OurProcess" class="overflow-hidden py-6 py-sm-7 py-xl-8">
         <div class="container">
-            <div class="max-w-2xl">
-                <h2 class="m-0 text-primary-emphasis text-4xl text-base leading-7 fw-semibold">
-                    Nosso Trabalho
-                </h2><br>
-                <div class="m-0 mt-3 text-1xl tracking-tight">
-                    Do cultivo à distribuição, cada etapa reflete nossa dedicação à qualidade, sustentabilidade e eficiência para levar até você os melhores produtos.
-                </div>
-                
-            </div>
+            <div class="col-12 col-xl-5 order-first order-xl-last">
+                <div class="mx-auto max-w-2xl">
 
-            <div class="mt-4">
-                <div class="glide glideHighLinear">
-                    <div class="glide__track" data-glide-el="track">
-                        <ul class="glide__slides align-items-center">
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo1.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo2.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo3.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo4.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo5.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo6.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo7.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-                            <li class="glide__slide">
-                                <div class="p-2">
-                                    <img src="../assets/img/partners/logo8.png" class="img-fluid" alt="partners">
-                                </div>
-                            </li>
-
-                        </ul>
-                    </div>
+                    <p class="m-0 mt-2 text-body-emphasis text-4xl tracking-tight fw-bold">
+                        Do Brasil para o Mundo
+                      </p>
+                      <p class="m-0 mt-4 text-body-secondary text-lg leading-8">
+                        Onde a riqueza do Brasil alcança o mundo. Com compromisso com qualidade e excelência, exportamos com orgulho o melhor da nossa terra para Argentina, EUA, Países Baixos e Portugal. Explore nossa seleção premium de gengibre, batata‑doce, inhame e muito mais — levando os sabores do Brasil aos mercados globais.
+                      </p>
+                      
+   
                 </div>
             </div>
+      
+          
+          
         </div>
+      </div>
+
+          <!-- Timeline   -->
+    <div id="timeline" class="timeline-container">
+
+        <div class="timeline">
+            <div class="nav-btn" id="prev">&#60;</div>
+            <div class=" timeline-item active " data-index="0">
+                <div  class="icon  "><i class="bi bi-house-fill"></i></div>
+                <span id="timeline-year" ></span>
+            </div>
+            <div class="timeline-item" data-index="1">
+                <div class="icon"><i class="bi bi-truck"></i></div>
+                <span id="timeline-year"></span>
+            </div>
+            <div class="timeline-item" data-index="2">
+                <div class="icon"><i class="bi bi-file-earmark-text"></i></div>
+                <span id="timeline-year"></span>
+            </div>
+            <div class="timeline-item" data-index="3">
+                <div class="icon"><i class="bi bi-globe"></i></div>
+                <span id="timeline-year"></span>
+            </div>
+            <div class="timeline-item" data-index="4">
+                <div class="icon"><i class="bi bi-tag"></i></div>
+                <span id="timeline-year"></span>
+            </div>
+            <div class="timeline-item" data-index="5">
+                <div class="icon"><i class="bi bi-buildings"></i></div>
+                <span  id="timeline-year"></span>
+            </div>
+            <div class="timeline-item" data-index="6">
+                <div class="icon"><i class="bi bi-box-seam"></i></div>
+                <span id="timeline-year"></span>
+            </div>
+            <div class="timeline-item" data-index="7">
+                <div class="icon"><i class="bi bi-box-seam"></i></div>
+                <span id="timeline-year"></span>
+            </div>
+            <div class="nav-btn" id="next">&#62;</div>
+        </div>
+        <p class="timeline-content show" id="timeline-text">
+          
+        </p>
     </div>
 
 
@@ -431,6 +434,7 @@
     <script src="../assets/js/scripts.js"></script>
     <script src="../assets/js/header-footer-list.js"></script>
     <script src="../assets/js/selectLanguage.js"></script>
+    <script src="../assets/js/sliderExport.js"></script>
 
 
 
