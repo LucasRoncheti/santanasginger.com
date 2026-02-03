@@ -1,5 +1,5 @@
 <?php
 
-	$recipient = "sales@santanasginger.com,lucasroncheti@gmail.com"; 
+	$recipient = "sales@santanasginger.com"; 
 
 ?>
